@@ -1,0 +1,13 @@
+.bitten {
+    -webkit-mask-image: radial-gradient(circle 10px at top left, transparent 10px, black 11px),
+                        radial-gradient(circle 10px at top right, transparent 10px, black 11px),
+                        radial-gradient(circle 10px at bottom left, transparent 10px, black 11px),
+                        radial-gradient(circle 10px at bottom right, transparent 10px, black 11px);
+    -webkit-mask-composite: destination-out;
+    mask-image: radial-gradient(circle 10px at top left, transparent 10px, black 11px),
+                radial-gradient(circle 10px at top right, transparent 10px, black 11px),
+                radial-gradient(circle 10px at bottom left, transparent 10px, black 11px),
+                radial-gradient(circle 10px at bottom right, transparent 10px, black 11px);
+    mask-composite: exclude;
+  }
+  
