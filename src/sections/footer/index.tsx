@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import BookNowRectangular from "@/components/book-now-rectaungular";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 type Props = {
   data: any;
