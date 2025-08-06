@@ -29,7 +29,7 @@ const FindFlukes: React.FC<any> = ({ data }) => {
         </h1>
         <div className="flex justify-center items-start gap-4 min-[1400px]:mt-15 min-[1400px]:items-center w-full">
           {/* Left Block */}
-          <div className="bg-[#D2451E] w-fit hidden min-[1400px]:block mr-8 mb-auto text-[25px] leading-[20px]">
+          <div className="bg-primary w-fit hidden min-[1400px]:block mr-8 mb-auto text-[25px] leading-[20px]">
             <Map width={500} height={500}></Map>
           </div>
 
@@ -85,7 +85,7 @@ const FindFlukes: React.FC<any> = ({ data }) => {
           height={22}
           className="my-[25px] min-[1400px]:hidden mx-auto"
         />
-        <div className="bg-[#D2451E] w-fit block min-[1400px]:hidden mx-auto">
+        <div className="bg-primary w-fit block min-[1400px]:hidden mx-auto">
           <Map width={250} height={250}></Map>
         </div>
 

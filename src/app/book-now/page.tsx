@@ -105,8 +105,6 @@ const BookNow: React.FC<any> = () => {
     };
   }, []); // Empty dependency array to run only once
 
-  console.log("hey");
-
   return (
     <main className="flex flex-col items-center pt-8 min-h-screen px-6 md:px-12 font-['Salford_Sans']">
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

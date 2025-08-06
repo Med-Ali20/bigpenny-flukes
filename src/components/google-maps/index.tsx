@@ -14,7 +14,6 @@ const center = {
 }
 
 const Map: React.FC<Props> = ({ width, height }) => {
-    console.log(process.env.GOOGLE_MAPS_API_KEY)
     return (
         <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}>
             <GoogleMap mapContainerStyle={{ width, height }} center={center} zoom={15} >

@@ -1,24 +1,56 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import EventCard from "@/components/event-card";
 import BookNowRectangular from "@/components/book-now-rectaungular";
 
 const NittyGritty: React.FC<any> = ({ data }) => {
+  const [circles, setCircles] = useState([]);
+
+  useEffect(() => {
+    const generateCircles = () => {
+      const circleWidth = 80; // 5rem = 80px (assuming 1rem = 16px)
+      const screenWidth = window.innerWidth;
+      const numberOfCircles = Math.ceil(screenWidth / circleWidth) + 20; // +1 for safety margin
+
+      const newCircles = [];
+      for (let i = 0; i < numberOfCircles; i++) {
+        newCircles.push(i);
+      }
+      //@ts-ignore
+      setCircles(newCircles);
+    };
+
+    generateCircles();
+
+    // Regenerate on window resize
+    window.addEventListener("resize", generateCircles);
+    return () => window.removeEventListener("resize", generateCircles);
+  }, []);
+
   return (
     <section
-      className='pb-[86px] pt-[86px] min-[1400px]:pt-[200px] text-center  font-["Salford_Sans"] overflow-x-hidden'
+      className="-mt-[4rem] pt-[7rem] text-center font-['Salford_Sans'] overflow-x-hidden relative z-[20]"
       id="about"
     >
-      <h1 className="text-[70px] font-black leading-[51px] uppercase min-[1400px]:text-[180px]">
+      {circles.map((index) => (
+        <span
+          key={index}
+          className="absolute top-5 rounded-full bg-secondary w-[5rem] h-[5rem]"
+          style={{ left: `${index * 5}rem` }}
+        />
+      ))}
+      <h1 className="text-[70px] font-black leading-[6rem] uppercase lg:text-[7rem]">
         {data.title}
       </h1>
-      <p className="max-w-[325px] lg:max-w-[1265px] mt-[30px] mb-[112px] mx-auto text-[25px] leading-[32px] min-[1400px]:text-[45px] min-[1400px]:leading-[48px] min-[1400px]:py-[55px]">
+      <p className="mt-[1rem] mb-[142px] mx-auto text-[25px] leading-[32px] min-[1400px]:text-[45px] min-[1400px]:leading-[48px] max-w-[75%]">
         {data.description}
       </p>
       <div className="w-full lg:flex lg:justify-center items-center relative">
         <EventCard
           className="bg-[#FBFBF8] min-[1000px]:-mr-6 min-[1400px]:-mr-5 lg:-mt-18 lg:ml-auto"
           rotation={2.17}
-          image={`${data.card[0].image.data.attributes.url}`}
+          image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[0].image.data.attributes.url}`}
           title={data.card[0].title}
           description={data.card[0].frontsideDescription}
           players={data.card[0].players}
@@ -36,7 +68,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
         <EventCard
           className="bg-[#FBFBF8] lg:-mr-10 lg:-mb-18 lg:ml-0"
           rotation={-1.78}
-          image={`${data.card[1].image.data.attributes.url}`}
+          image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[1].image.data.attributes.url}`}
           title={data.card[1].title}
           description={data.card[1].frontsideDescription}
           players={data.card[1].players}
@@ -53,7 +85,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
         <EventCard
           className="bg-[#FBFBF8] lg:-mt-24 lg:-ml-2 lg:mr-0"
           rotation={1.29}
-          image={`${data.card[2].image.data.attributes.url}`}
+          image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[2].image.data.attributes.url}`}
           title={data.card[2].title}
           description={data.card[2].frontsideDescription}
           players={data.card[2].players}
@@ -70,7 +102,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
         <EventCard
           className="bg-[#FBFBF8] min-[1000px]:-ml-5 min-[1400px]:-ml-5 lg:-mb-18 lg:mr-auto"
           rotation={-1.53}
-          image={`${data.card[3].image.data.attributes.url}`}
+          image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[3].image.data.attributes.url}`}
           title={data.card[3].title}
           description={data.card[3].frontsideDescription}
           players={data.card[3].players}
@@ -86,9 +118,18 @@ const NittyGritty: React.FC<any> = ({ data }) => {
         />
       </div>
       <BookNowRectangular
-        className="!w-[286.85px] !h-[86.53px] !text-[45px] mx-auto mt-20 lg:mt-30"
-        text="book now"
+        className="!w-[286.85px] !h-[86.53px] !text-[40px] mx-auto mt-20 lg:mt-30"
+        text="book your game"
       />
+      <div className="bg-primary relative h-[5rem] mt-15">
+        {circles.map((index) => (
+          <span
+            key={index}
+            className="absolute -top-10 rounded-full bg-secondary w-[5rem] h-[5rem] z-[9999]"
+            style={{ left: `${index * 5}rem` }}
+          />
+        ))}
+      </div>
     </section>
   );
 };

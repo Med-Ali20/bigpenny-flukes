@@ -32,8 +32,6 @@ const GetLucky:React.FC<any> = ({ data }) => {
       .filter(Boolean);
   };
 
-  console.log(data)
-
   return (
     <section className='font-["Salford_Sans"] pt-[25px] lg:pt-[15px] 2xl:pt-[25px] lg:flex px-4 lg:flex-col lg:items-center'>
       <div className="lg:flex lg:justify-center lg:pt-[30px] 2xl:pt-[51px]">
@@ -64,17 +62,17 @@ const GetLucky:React.FC<any> = ({ data }) => {
             <p className="col-start-3 col-end-4 row-start-1 row-end-2 text-center font-bold xl:text-[22px] xl:leading-[27px] 2xl:text-[30px] uppercase mt-[30px] ml-8 2xl:leading-[36px] -mb-9 2xl:-mb-12 xl:block lg:hidden">
               Cocktails <br /> Beer <br /> Bites <br /> & More
             </p>
-            <p className='col-start-1 col-end-2 row-start-2 text-center my-auto ml-auto mr-4 before:block before:content-[""] before:bg-[#D2451E] lg:before:w-[150px] 2xl:before:w-[200px] before:h-[2px] lg:hidden xl:flex items-center before:mr-2'>
+            <p className='col-start-1 col-end-2 row-start-2 text-center my-auto ml-auto mr-4 before:block before:content-[""] before:bg-primary lg:before:w-[150px] 2xl:before:w-[200px] before:h-[2px] lg:hidden xl:flex items-center before:mr-2'>
               LDN
             </p>
-            <p className='col-start-3 col-end-4 row-start-2 text-center my-auto mr-auto ml-[14px] after:block after:content-[""] after:bg-[#D2451E] lg:after:w-[150px] 2xl:after:w-[200px] after:h-[2px] lg:hidden xl:flex items-center after:ml-2'>
+            <p className='col-start-3 col-end-4 row-start-2 text-center my-auto mr-auto ml-[14px] after:block after:content-[""] after:bg-primary lg:after:w-[150px] 2xl:after:w-[200px] after:h-[2px] lg:hidden xl:flex items-center after:ml-2'>
               E17
             </p>
             <BookNowRectangular className="col-start-2 col-end-3 row-start-2 row-end-3 xl-w-[200px] xl:h-[70px] 2xl:w-full 2xl:h-[86.53px] !text-[50px] !2xl:text-[65px] lg:my-auto" />
           </div>
         </div>
         <div
-          className="bg-[#D2451E] w-[351px] h-[383px] flex items-center justify-center mx-auto relative 2xl:hidden 
+          className="bg-primary w-[351px] h-[383px] flex items-center justify-center mx-auto relative 2xl:hidden 
                 lg:w-[450px] lg:h-[490px] xl:w-[550px] xl:h-[600px]"
         >
           <div
@@ -88,13 +86,13 @@ const GetLucky:React.FC<any> = ({ data }) => {
               className="mx-auto my-auto"
             />
           </div>
-          <span className="absolute bg-[#FBFBF8] w-[12px] h-[12px] rounded-[50%] top-[-5px] left-[-5px]"></span>
-          <span className="absolute bg-[#FBFBF8] w-[12px] h-[12px] rounded-[50%] top-[-5px] right-[-5px]"></span>
-          <span className="absolute bg-[#FBFBF8] w-[12px] h-[12px] rounded-[50%] bottom-[-5px] right-[-5px]"></span>
-          <span className="absolute bg-[#FBFBF8] w-[12px] h-[12px] rounded-[50%] bottom-[-5px] left-[-5px]"></span>
+          <span className="absolute bg-secondary w-[12px] h-[12px] rounded-[50%] top-[-5px] left-[-5px]"></span>
+          <span className="absolute bg-secondary w-[12px] h-[12px] rounded-[50%] top-[-5px] right-[-5px]"></span>
+          <span className="absolute bg-secondary w-[12px] h-[12px] rounded-[50%] bottom-[-5px] right-[-5px]"></span>
+          <span className="absolute bg-secondary w-[12px] h-[12px] rounded-[50%] bottom-[-5px] left-[-5px]"></span>
         </div>
 
-        <div className="hidden 2xl:block bg-[#D2451E] w-[713px] h-[800px] flex items-center justify-center relative ml-[75px]">
+        <div className="hidden 2xl:block bg-primary w-[713px] h-[800px] flex items-center justify-center relative ml-[75px]">
           <img
             src={`${data.image.data.attributes.url}`}
             alt="Flukes"

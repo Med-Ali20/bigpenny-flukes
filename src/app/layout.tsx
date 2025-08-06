@@ -8,6 +8,7 @@ import Footer from "@/sections/footer";
 import MobileHeader from "@/components/MobileHeader";
 import CookieBanner from "@/components/cookies";
 import GTMHead from "@/components/ssGTM";
+import BookNowRectangular from "@/components/book-now-rectaungular";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,7 +27,6 @@ export default async function RootLayout({
   );
   const { data } = await res.json();
   const header = data.attributes.header;
-  console.log(data.attributes.book);
 
   return (
     <html lang="en" className={`${inter.variable}`}>
@@ -45,7 +45,7 @@ export default async function RootLayout({
         </Script>
         <GTMHead />
       </head>
-      <body className="antialiased relative">
+      <body className="antialiased relative bg-secondary text-primary">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KXCJGTMJ"
@@ -54,12 +54,11 @@ export default async function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        <header className="flex py-[17px] px-[24px] md:py-[24px] md:px-[60px] text-[#D2451E] border-b-[3px] border-[#D2451E] w-full items-center uppercase sticky top-0 bg-[#FBFBF8] z-90">
+        <header className="flex py-[17px] px-[24px] md:py-[24px] md:px-[60px] text-primary border-b-[1rem] border-primary w-full items-center uppercase sticky top-0 bg-[#ebe9db] z-90">
           {/* Mobile Navigation */}
-          <MobileHeader headerData={header} />
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:block text-lg font-semibold">
+          {/* <nav className="hidden md:block text-lg font-semibold">
             <ul>
               <li>
                 {header.navigation.map((el: any) => (
@@ -75,31 +74,33 @@ export default async function RootLayout({
                 ))}
               </li>
             </ul>
-          </nav>
+          </nav> */}
 
           {/* Logo */}
-          <a href="/flukes/" className="mx-auto min-[1400px]:hidden">
+          <a href="/flukes/" className="mr-auto min-[1400px]:hidden">
             <img
-              src={`${header.logo.data.attributes.url}`}
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}${header.logo.data.attributes.url}`}
               alt="Logo"
-              width={240}
-              height={44}
+              width={180}
+              height={38}
             />
           </a>
           <a
             href="/flukes/"
-            className="md:mx-auto hidden min-[1400px]:block my-[5px]"
+            className="mr-auto hidden min-[1400px]:block my-[5px]"
           >
             <img
-              src={`${header.logo.data.attributes.url}`}
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}${header.logo.data.attributes.url}`}
               alt="Logo"
-              width={426}
-              height={82}
+              width={320}
+              height={62}
             />
           </a>
 
           {/* Book Now Button */}
-          <BookNowElliptic className="hidden md:block font-['Salford_Sans'] lg:text-[30px] lg:mb-2 min-[1400px]:mb-0" />
+          <BookNowRectangular className="hidden lg:block font-['Salford_Sans'] lg:text-[34px] py-[10px]" />
+          <MobileHeader headerData={header} />
+
         </header>
         <AppContextProvider value={data.attributes.book}>
           {children}

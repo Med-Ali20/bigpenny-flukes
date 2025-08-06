@@ -17,7 +17,7 @@ const FreeCocktail = () => {
                 <h3 className='font-black text-[25px] lg:text-[85px] xl:text-[111px] xl:leading-[85px] uppercase leading-8 lg:leading-16 mb-4 mt-6 hidden lg:block'>FREE COCKTAILS OR MOCKTAILS ON ARRIVAL</h3>
                 <div className='flex align-center'>
                     <p className='my-auto lg:text-[32px] lg:leading-[32px] xl:text-[47px] xl:leading-[47px] mt-2 max-w-[70%] hidden lg:block'>For everyone in your group. How about that? Book before 8 May to bag this.</p>
-                    <BookNowElliptic className='text-[#D2451E] border-[2px] ml-auto mr-15 mb-2 hidden xl:block lg:mt-12 uppercase' orangeBackground={true} />
+                    <BookNowElliptic className='text-primary border-[2px] ml-auto mr-15 mb-2 hidden xl:block lg:mt-12 uppercase' orangeBackground={true} />
                 </div>
             </div>
         </section>

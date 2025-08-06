@@ -1,43 +1,88 @@
-import React from "react";
-import BookNowElliptic from "@/components/book-now-elliptic";
-import Image from "next/image";
+"use client";
 
-const Footer: React.FC<any> = ({ data }) => {
-  const stripHtmlTags = (html: string): string => {
-    return html.replace(/<[^>]*>/g, "").trim();
-  };
+import React, { useState, useEffect } from "react";
+import BookNowRectangular from "@/components/book-now-rectaungular";
+import { usePathname } from "next/navigation";
+
+type Props = {
+  data: any;
+};
+
+const Footer: React.FC<Props> = ({ data }) => {
+  const [circles, setCircles] = useState([]);
+  const path = usePathname();
+
+  useEffect(() => {
+    const generateCircles = () => {
+      const circleWidth = 80; // 5rem = 80px (assuming 1rem = 16px)
+      const screenWidth = window.innerWidth;
+      const numberOfCircles = Math.ceil(screenWidth / circleWidth) + 20; // +1 for safety margin
+
+      const newCircles = [];
+      for (let i = 0; i < numberOfCircles; i++) {
+        newCircles.push(i);
+      }
+      //@ts-ignore
+      setCircles(newCircles);
+    };
+
+    generateCircles();
+
+    // Regenerate on window resize
+    window.addEventListener("resize", generateCircles);
+    return () => window.removeEventListener("resize", generateCircles);
+  }, []);
 
   return (
     <footer
-      className="bg-[url('/flukes/illustrations/union-orange.svg')] font-salford flex flex-col lg:py-28 text-center justify-center items-center lg:bg-cover bg-[length:250%] relative lg:pb-8 bg-no-repeat py-[80px] lg:-mt-14 text-[#FBFBF8] lg:mt-[18px]
-                            after:content-[''] after:absolute after:w-full after:h-1/2 after:bottom-0 after:bg-[#D2451E] after:-z-10 font-['Salford_Sans']"
+      className={`${
+        path === "/"
+          ? "bg-secondary text-primary lg:-mt-14"
+          : "bg-primary text-secondary mt-6"
+      } font-salford flex flex-col text-center justify-center items-center  relative lg:pb-8 py-[80px] text-[#FBFBF8] font-['Salford_Sans'] relative`}
     >
+      {circles.map((index) => (
+        <span
+          key={index}
+          className={`${
+            path === "/" ? "bg-secondary" : "bg-primary"
+          } absolute -top-10 rounded-full w-[5rem] h-[5rem]`}
+          style={{ left: `${index * 5}rem` }}
+        />
+      ))}
       <h2 className="font-black uppercase text-[80px] leading-[70px] mb-[15px] lg:mb-6 lg:text-[150px] lg:leading-36">
         <span className="">
           <img
-            src={`${data.logo.data.attributes.url}`}
+            src={`${
+              path === "/"
+                ? "illustrations/logo-horizontal.png"
+                : `${process.env.NEXT_PUBLIC_BASE_URL}${data.logo.data.attributes.url}`
+            }`}
             className="mx-auto mt-6 lg:hidden"
             alt="trophy"
             width={332}
             height={64}
           />
           <img
-            src={`${data.logo.data.attributes.url}`}
+            src={`${
+              path === "/"
+                ? "illustrations/logo-horizontal.png"
+                : `${process.env.NEXT_PUBLIC_BASE_URL}${data.logo.data.attributes.url}`
+            }`}
             className="hidden lg:block"
             alt="Flukes_Logo"
-            width={600}
-            height={200}
+            width={400}
+            height={120}
           />
-          <BookNowElliptic
-            className="font-salford text-[#D2451E] hidden lg:block -mt-7 ml-auto mr-6"
-            orangeBackground={true}
+          <BookNowRectangular
+            className={`${
+              path === "/"
+                ? "bg-primary text-secondary"
+                : "bg-secondary text-primary"
+            } text-[2rem] mt-8 mb-4 w-fit mx-auto h-auto leading-0 py-[2rem] px-[2rem]`}
           />
         </span>
       </h2>
-      <BookNowElliptic
-        className="text-[#D2451E] my-13 mx-auto lg:hidden uppercase"
-        orangeBackground={true}
-      />
       <div className="lg:flex lg:items-center text-[25px] leading-[20px] lg:justify-center lg:w-fit mx-auto">
         <div className="uppercase mx-auto mt-4 lg:my-0 lg:mr-auto">
           {data.links.map((link: any) => {
