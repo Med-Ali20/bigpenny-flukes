@@ -91,7 +91,7 @@ const EventCard: React.FC<Props> = ({
             
             {/* Logo overlay */}
             <Image
-              src="/illustrations/logo.svg"
+              src="/flukes/illustrations/logo.svg"
               alt="Flukes"
               width={107.22}
               height={41.51}
