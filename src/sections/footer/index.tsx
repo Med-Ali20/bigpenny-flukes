@@ -52,7 +52,7 @@ const Footer: React.FC<Props> = ({ data }) => {
       ))}
       <h2 className="font-black uppercase text-[80px] leading-[70px] mb-[15px] lg:mb-6 lg:text-[150px] lg:leading-36">
         <span className="">
-          <img
+          <Image
             src={`${
               path === "/"
                 ? "illustrations/logo-horizontal.png"
@@ -63,7 +63,7 @@ const Footer: React.FC<Props> = ({ data }) => {
             width={332}
             height={64}
           />
-          <img
+          <Image
             src={`${
               path === "/"
                 ? "illustrations/logo-horizontal.png"

@@ -85,9 +85,9 @@ const EventCard: React.FC<Props> = ({
               backgroundImage: `url('${image}')`,
             }}
           >
-            {/* <img src={image} alt='Flukes' className='ml-3 min-[1400px]:hidden my-auto'  /> */}
-            {/* <img src={image} alt='Flukes' width={widthDesktop} height={heightDesktop} className='ml-3 hidden min-[1400px]:block my-auto' /> */}
-            <img
+            {/* <Image src={image} alt='Flukes' className='ml-3 min-[1400px]:hidden my-auto'  /> */}
+            {/* <Image src={image} alt='Flukes' width={widthDesktop} height={heightDesktop} className='ml-3 hidden min-[1400px]:block my-auto' /> */}
+            <Image
               src="/flukes/illustrations/logo.svg"
               alt="Flukes"
               width={107.22}

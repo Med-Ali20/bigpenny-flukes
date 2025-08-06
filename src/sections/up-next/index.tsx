@@ -76,7 +76,7 @@ const UpNext: React.FC<any> = ({ data }) => {
       <div
         className={`w-[80%] mx-auto px-[1.2rem] bg-primary text-[#ebe9db] relative flex items-center justify-center`}
       >
-        <img
+        <Image
           src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image.data.attributes.url}`}
           className="w-full mx-auto"
           alt=""

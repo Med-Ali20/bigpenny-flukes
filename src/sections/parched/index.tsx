@@ -75,7 +75,7 @@ const Parched: React.FC<any> = ({ data }) => {
               className="lg:max-w-[728px] text-center text-[25px] md:[text-30px] leading-[27px] min-[1400px]:leading-[42px] min-[1400px]:text-[45px] w-[80%] mt-8 lg:mt-0 lg:w-[40%] text-white font-semibold"
             ></div>
             <div className="w-[60%] lg:w-[32%] relative">
-              <img src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_2.data.attributes.url}`}
+              <Image src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_2.data.attributes.url}`}
                alt="" />
               <span
                 className={`absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-[50%] top-[-5px] left-[-5px] md:top-[-30px] md:left-[-30px]`}
@@ -111,7 +111,7 @@ const Parched: React.FC<any> = ({ data }) => {
           </h3>
           <div className="flex flex-col lg:flex-row items-center justify-around my-12">
             <div className="w-[60%] lg:w-[32%] relative">
-              <img src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_1.data.attributes.url}`} alt="" />
+              <Image src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_1.data.attributes.url}`} alt="" />
               <span
                 className={`absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-[50%] top-[-5px] left-[-5px] md:top-[-30px] md:left-[-30px]`}
               ></span>
@@ -151,7 +151,7 @@ const Parched: React.FC<any> = ({ data }) => {
             className="lg:max-w-[728px] text-center text-[25px] md:[text-30px] mb-12 lg:mb-0 leading-[27px] min-[1400px]:leading-[42px] min-[1400px]:text-[45px] w-[80%] mt-8 lg:mt-0 lg:w-[40%] text-white font-semibold"
           ></div>
           <div className="w-[60%] lg:w-[32%] relative">
-            <img src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_3.data.attributes.url}`} alt="" />
+            <Image src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_3.data.attributes.url}`} alt="" />
             <span
               className={`absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-[50%] top-[-5px] left-[-5px] md:top-[-30px] md:left-[-30px]`}
             ></span>

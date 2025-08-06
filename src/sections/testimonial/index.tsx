@@ -19,7 +19,7 @@ const Testimonial: React.FC<any> = ({ data }) => {
         className="mx-auto mb-[35px] mt-[30px] hidden lg:block"
       />
       <section className='font-["Salford_Sans"] flex flex-col items-center pt-[65px] px-4 lg:py-24'>
-        <img
+        <Image
           src={`${data.image.data.attributes.url}`}
           alt="cake"
           width={302}
