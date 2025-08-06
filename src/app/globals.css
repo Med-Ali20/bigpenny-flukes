@@ -120,6 +120,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
 }
 
@@ -131,7 +132,6 @@ body {
 body,
 * {
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 
