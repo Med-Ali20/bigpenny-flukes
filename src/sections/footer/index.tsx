@@ -57,7 +57,7 @@ const Footer: React.FC<Props> = ({ data }) => {
             src={`${
               path === "/"
                 ? "/flukes/illustrations/logo-horizontal.png"
-                : `${process.env.NEXT_PUBLIC_BASE_URL}${data.logo.data.attributes.url}`
+                : process.env.NEXT_PUBLIC_BASE_URL + data.logo.data.attributes.url
             }`}
             className="mx-auto mt-6 lg:hidden"
             alt="trophy"
@@ -68,7 +68,7 @@ const Footer: React.FC<Props> = ({ data }) => {
             src={`${
               path === "/"
                 ? "/flukes/illustrations/logo-horizontal.png"
-                : `${process.env.NEXT_PUBLIC_BASE_URL}${data.logo.data.attributes.url}`
+                : process.env.NEXT_PUBLIC_BASE_URL + data.logo.data.attributes.url
             }`}
             className="hidden lg:block"
             alt="Flukes_Logo"
