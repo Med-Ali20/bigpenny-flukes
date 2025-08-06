@@ -78,7 +78,7 @@ export default async function RootLayout({
 
           {/* Logo */}
           <a href="/flukes/" className="mr-auto min-[1400px]:hidden">
-            <img
+            <Image
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${header.logo.data.attributes.url}`}
               alt="Logo"
               width={180}
@@ -89,7 +89,7 @@ export default async function RootLayout({
             href="/flukes/"
             className="mr-auto hidden min-[1400px]:block my-[5px]"
           >
-            <img
+            <Image
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${header.logo.data.attributes.url}`}
               alt="Logo"
               width={320}

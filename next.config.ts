@@ -1,8 +1,8 @@
 import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // basePath: "/flukes",
-  // assetPrefix: "/flukes",
+  basePath: "/flukes",
+  assetPrefix: "/flukes",
   trailingSlash: true, // Helps with subpath routing
   experimental: {
      serverActions: {

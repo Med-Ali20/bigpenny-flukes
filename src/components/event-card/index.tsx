@@ -79,25 +79,30 @@ const EventCard: React.FC<Props> = ({
         <div
           className={`bg-[#FBFBF8] absolute w-full h-full border-[3px] mx-auto rounded-2xl p-[12px] flex flex-col inset-0 backface-hidden min-[1400px]:p-[20px]`}
         >
-          <div
-            className="flex items-center justify-center w-[295.72px] h-[223.95px] mx-auto relative z-1 min-[1400px]:w-[322px] min-[1400px]:h-[259px] bg-cover bg-center"
-            style={{
-              backgroundImage: `url('${image}')`,
-            }}
-          >
-            {/* <Image src={image} alt='Flukes' className='ml-3 min-[1400px]:hidden my-auto'  /> */}
-            {/* <Image src={image} alt='Flukes' width={widthDesktop} height={heightDesktop} className='ml-3 hidden min-[1400px]:block my-auto' /> */}
+          <div className="flex items-center justify-center w-[295.72px] h-[223.95px] mx-auto relative z-1 min-[1400px]:w-[322px] min-[1400px]:h-[259px] overflow-hidden">
+            {/* Replace background image with Next.js Image */}
             <Image
-              src="/flukes/illustrations/logo.svg"
+              src={image}
+              alt="Event Image"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1400px) 322px, 295.72px"
+            />
+            
+            {/* Logo overlay */}
+            <Image
+              src="/illustrations/logo.svg"
               alt="Flukes"
               width={107.22}
               height={41.51}
               className="absolute -bottom-[27px] left-[100px] z-50"
             />
-            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] top-[-7px] left-[-7px]"></span>
-            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] top-[-7px] right-[-7px]"></span>
-            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] bottom-[-7px] right-[-7px]"></span>
-            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] bottom-[-7px] left-[-5px]"></span>
+            
+            {/* Corner decorations */}
+            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] top-[-7px] left-[-7px] z-10"></span>
+            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] top-[-7px] right-[-7px] z-10"></span>
+            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] bottom-[-7px] right-[-7px] z-10"></span>
+            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] bottom-[-7px] left-[-5px] z-10"></span>
           </div>
           <h3 className="mt-8 text-left font-black text-[40px] leading-[35px] mb-2 uppercase">
             {title}
