@@ -79,7 +79,7 @@ const EventCard: React.FC<Props> = ({
         <div
           className={`bg-[#FBFBF8] absolute w-full h-full border-[3px] mx-auto rounded-2xl p-[12px] flex flex-col inset-0 backface-hidden min-[1400px]:p-[20px]`}
         >
-          <div className="flex items-center justify-center w-[295.72px] h-[223.95px] mx-auto relative z-1 min-[1400px]:w-[322px] min-[1400px]:h-[259px] overflow-hidden">
+          <div className="flex items-center justify-center w-[295.72px] h-[223.95px] mx-auto relative z-1 min-[1400px]:w-[322px] min-[1400px]:h-[259px]">
             {/* Replace background image with Next.js Image */}
             <Image
               src={image}
@@ -91,7 +91,7 @@ const EventCard: React.FC<Props> = ({
             
             {/* Logo overlay */}
             <Image
-              src="/flukes/illustrations/logo.svg"
+              src="/illustrations/logo.svg"
               alt="Flukes"
               width={107.22}
               height={41.51}

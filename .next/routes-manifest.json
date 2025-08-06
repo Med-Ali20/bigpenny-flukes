@@ -2,8 +2,16 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "",
+  "basePath": "/flukes",
   "redirects": [
+    {
+      "source": "/flukes",
+      "destination": "/flukes/",
+      "basePath": false,
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^/flukes$"
+    },
     {
       "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
       "destination": "/:file",

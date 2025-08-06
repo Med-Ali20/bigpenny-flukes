@@ -12,7 +12,7 @@
     },
     "distDir": ".next",
     "cleanDistDir": true,
-    "assetPrefix": "",
+    "assetPrefix": "/flukes",
     "cacheMaxMemorySize": 52428800,
     "configOrigin": "next.config.ts",
     "useFileSystemPublicRoutes": true,
@@ -46,7 +46,7 @@
         256,
         384
       ],
-      "path": "/_next/image/",
+      "path": "/flukes/_next/image/",
       "loader": "default",
       "loaderFile": "",
       "domains": [],
@@ -74,9 +74,9 @@
       "pagesBufferLength": 5
     },
     "amp": {
-      "canonicalBase": ""
+      "canonicalBase": "/flukes"
     },
-    "basePath": "",
+    "basePath": "/flukes",
     "sassOptions": {},
     "trailingSlash": true,
     "i18n": null,
