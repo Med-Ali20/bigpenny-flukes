@@ -56,7 +56,7 @@ const Footer: React.FC<Props> = ({ data }) => {
           <Image
             src={`${
               path === "/"
-                ? "illustrations/logo-horizontal.png"
+                ? "/flukes/illustrations/logo-horizontal.png"
                 : `${process.env.NEXT_PUBLIC_BASE_URL}${data.logo.data.attributes.url}`
             }`}
             className="mx-auto mt-6 lg:hidden"
@@ -67,7 +67,7 @@ const Footer: React.FC<Props> = ({ data }) => {
           <Image
             src={`${
               path === "/"
-                ? "illustrations/logo-horizontal.png"
+                ? "/flukes/illustrations/logo-horizontal.png"
                 : `${process.env.NEXT_PUBLIC_BASE_URL}${data.logo.data.attributes.url}`
             }`}
             className="hidden lg:block"
