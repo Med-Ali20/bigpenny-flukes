@@ -68,7 +68,7 @@ const Parched: React.FC<any> = ({ data }) => {
               data.parchedTitle
             )}
           </h3>
-          <div className="flex flex-col-reverse lg:flex-row items-center justify-around mt-12">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-around mt-12 lg:max-w-[1200px] lg:mx-auto">
             <div
               dangerouslySetInnerHTML={{ __html: data.parchedDescription }}
               className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 text-secondary font-semibold"
@@ -76,9 +76,9 @@ const Parched: React.FC<any> = ({ data }) => {
             <div className="relative">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_1.data.attributes.url}`}
-                width={580}
-                height={580}
-                className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[580px] lg:h-[580px] object-cover"
+                width={450}
+                height={450}
+                className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px] object-cover"
                 alt=""
               />
               <span className="absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-full top-[-5px] left-[-5px] md:top-[-30px] md:left-[-30px]"></span>
@@ -104,13 +104,13 @@ const Parched: React.FC<any> = ({ data }) => {
               data.bigpennyDownstairs
             )}
           </h3>
-          <div className="flex flex-col lg:flex-row items-center justify-around mt-12">
+          <div className="flex flex-col lg:flex-row items-center justify-around mt-12 lg:max-w-[1200px] lg:mx-auto">
             <div className="relative">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_2.data.attributes.url}`}
-                width={580}
-                height={580}
-                className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[580px] lg:h-[580px] object-cover"
+                width={450}
+                height={450}
+                className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px] object-cover"
                 alt=""
               />
               <span className="absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-full top-[-5px] left-[-5px] md:top-[-30px] md:left-[-30px]"></span>
