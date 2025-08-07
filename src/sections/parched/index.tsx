@@ -57,7 +57,7 @@ const Parched: React.FC<any> = ({ data }) => {
   return (
     <section className="font-[var(--font-salford-sans)] bg-primary text-secondary flex flex-col xl:block items-center justify-center pb-[4.5rem]">
       {/* First Section */}
-      <div className='font-["Salford_Sans"] xl:flex text-center xl:w-full xl:justify-center'>
+      <div className="px-8 font-['Salford_Sans']">
         <div className="px-8">
           <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] my-[35px]">
             {data.parchedTitle === "parched? peckish?" ? (
@@ -91,7 +91,7 @@ const Parched: React.FC<any> = ({ data }) => {
       </div>
 
       {/* Second Section */}
-      <div className="flex font-salford text-center lg:justify-center">
+      <div className="px-8 font-['Salford_Sans']">
         <div className="lg:mt-12 px-10 lg:flex lg:flex-col items-center mt-8">
           <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] font-['Salford_Sans']">
             {data.bigpennyDownstairs ===
@@ -149,7 +149,7 @@ const Parched: React.FC<any> = ({ data }) => {
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_3.data.attributes.url}`}
               width={450}
               height={450}
-              className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[580px] lg:h-[580px] object-cover"
+              className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px] object-cover"
               alt=""
             />
             <span className="absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-full top-[-5px] left-[-5px] md:top-[-30px] md:left-[-30px]"></span>
