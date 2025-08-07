@@ -51,14 +51,14 @@ const Footer: React.FC<Props> = ({ data }) => {
       ))}
       <h2 className="font-black uppercase text-[80px] leading-[70px] mb-[15px] lg:mb-6 lg:text-[150px] lg:leading-36">
         <span className="">
-          <img
+          <Image
             src="/flukes/illustrations/logo-horizontal.png"
             className="mx-auto mt-6 lg:hidden"
             alt="trophy"
             width={332}
             height={64}
           />
-          <img
+          <Image
             src="/flukes/illustrations/logo-horizontal.png"
             className="hidden lg:block"
             alt="Flukes_Logo"

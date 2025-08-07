@@ -4,14 +4,14 @@ import Image from "next/image";
 const Testimonial: React.FC<any> = ({ data }) => {
   return (
     <>
-      <img
+      <Image
         src="/flukes/illustrations/separator.svg"
         alt="Flukes"
         width={341}
         height={22}
         className="mx-auto mb-[15px] mt-[75px] lg:hidden"
       />
-      <img
+      <Image
         src="/flukes/illustrations/separator-desktop.svg"
         alt="Flukes"
         width={1518}
@@ -19,7 +19,7 @@ const Testimonial: React.FC<any> = ({ data }) => {
         className="mx-auto mb-[35px] mt-[30px] hidden lg:block"
       />
       <section className='font-["Salford_Sans"] flex flex-col items-center pt-[65px] px-4 lg:py-24'>
-        <img
+        <Image
           src={`${data.image.data.attributes.url}`}
           alt="cake"
           width={302}
@@ -32,14 +32,14 @@ const Testimonial: React.FC<any> = ({ data }) => {
         <p className="lg:mt-8 mt-4 text-[40px] leading-[32px] lg:text-[65px] mb-[35px]">
           {data.name}
         </p>
-        <img
+        <Image
           src="/flukes/illustrations/separator.svg"
           alt="Flukes"
           width={341}
           height={22}
           className="mx-auto my-[15px] lg:hidden"
         />
-        <img
+        <Image
           src="/flukes/illustrations/separator-desktop.svg"
           alt="Flukes"
           width={1518}
