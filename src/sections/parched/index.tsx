@@ -133,10 +133,10 @@ const Parched: React.FC<any> = ({ data }) => {
                 className={`absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-[50%] bottom-[-5px] left-[-5px] md:bottom-[-30px] md:left-[-30px]`}
               ></span>
             </div>
-            <div className="flex flex-col lg:flex-row items-center justify-around mt-12">
+            <div className="flex flex-col lg:max-w-[428px]  w-[80%]  mb-12 ">
               <div
                 dangerouslySetInnerHTML={{ __html: data.bigpennyDescription }}
-                className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center  mb-12 md:mb-0  w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary font-semibold"
+                className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] text-center md:mb-0  mt-8 lg:mt-0 text-secondary font-semibold"
               ></div>
               <BookNowElliptic className="my-7" orangeBackground />
             </div>
