@@ -6,7 +6,7 @@ const FreeCocktail = () => {
     return (
         <section className="bg-[url('/flukes/illustrations/union-orange.svg')] font-['Salford_Sans'] flex flex-col md:pl-6 xl:py-38 text-center lg:flex-row justify-center align-center md:bg-contain w-full bg-center bg-repeat-x bg-[cover] z-50 bg-no-repeat py-[80px] relative" style={{ marginTop: '35px' }}>
             <div className='lg:w-[210px] lg:h-[400px] xl:w-[262.9px] xl:h-[450.02px] hidden lg:flex overflow-hidden relative'>
-                <img src="/flukes/illustrations/Illustrations_13.svg" className='rotate-[1.15]' alt='trophy' fill />
+                <img src="/flukes/illustrations/Illustrations_13.svg" className='rotate-[1.15]' alt='trophy' />
             </div>
             <div className='flex lg:hidden px-8 justify-center items-center'>
                 <h3 className='font-black text-[45px] uppercase leading-[40px] sm:text-[60px] sm:leading-[55px] mb-4 mt-6 text-[#FBFBF8] text-left'>FREE COCKTAILS OR MOCKTAILS ON ARRIVAL</h3>
