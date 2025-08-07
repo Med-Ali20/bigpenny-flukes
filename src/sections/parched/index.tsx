@@ -68,7 +68,7 @@ const Parched: React.FC<any> = ({ data }) => {
               data.parchedTitle
             )}
           </h3>
-          <div className="flex flex-col-reverse lg:flex-row items-center justify-around mt-12 lg:max-w-[1200px] lg:mx-auto">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-around w-full mt-12 lg:max-w-[1200px] lg:mx-auto">
             <div
               dangerouslySetInnerHTML={{ __html: data.parchedDescription }}
               className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 text-secondary font-semibold"
@@ -95,7 +95,7 @@ const Parched: React.FC<any> = ({ data }) => {
         <div className="lg:mt-12 px-10 lg:flex lg:flex-col items-center mt-8">
           <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] font-['Salford_Sans']">
             {data.bigpennyDownstairs ===
-            "And Big Penny Social's Just Downstairs..." ? (
+            "And Big Penny Social’s Just Downstairs..." ? (
               <Fragment>
                 Big Penny Social
                 <br /> Is Downstairs!
@@ -104,7 +104,7 @@ const Parched: React.FC<any> = ({ data }) => {
               data.bigpennyDownstairs
             )}
           </h3>
-          <div className="flex flex-col lg:flex-row items-center justify-around mt-12 lg:max-w-[1200px] lg:mx-auto">
+          <div className="flex flex-col lg:flex-row items-center justify-around w-full mt-12 lg:max-w-[1200px] lg:mx-auto">
             <div className="relative">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_2.data.attributes.url}`}
@@ -139,7 +139,7 @@ const Parched: React.FC<any> = ({ data }) => {
             data.about
           )}
         </h3>
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-around mt-12">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-around w-full mt-12">
           <div
             dangerouslySetInnerHTML={{ __html: data.aboutDescription }}
             className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center mb-12 md:mb-0 w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary font-semibold"
@@ -147,8 +147,8 @@ const Parched: React.FC<any> = ({ data }) => {
           <div className="relative">
             <Image
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_3.data.attributes.url}`}
-              width={580}
-              height={580}
+              width={450}
+              height={450}
               className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[580px] lg:h-[580px] object-cover"
               alt=""
             />
