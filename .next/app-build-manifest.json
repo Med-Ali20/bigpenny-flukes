@@ -1,48 +1,15 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-e3cd1c210444f1f1.js",
-      "static/chunks/4bd1b696-08d00eb906351da0.js",
-      "static/chunks/684-679ebacd6058a153.js",
-      "static/chunks/main-app-7946eb05cde26914.js",
-      "static/chunks/app/_not-found/page-bca1ccee615a432c.js"
-    ],
     "/layout": [
-      "static/chunks/webpack-e3cd1c210444f1f1.js",
-      "static/chunks/4bd1b696-08d00eb906351da0.js",
-      "static/chunks/684-679ebacd6058a153.js",
-      "static/chunks/main-app-7946eb05cde26914.js",
-      "static/css/83e8216135b43ae8.css",
-      "static/chunks/app/layout-05380e044745b18b.js"
-    ],
-    "/book-now/page": [
-      "static/chunks/webpack-e3cd1c210444f1f1.js",
-      "static/chunks/4bd1b696-08d00eb906351da0.js",
-      "static/chunks/684-679ebacd6058a153.js",
-      "static/chunks/main-app-7946eb05cde26914.js",
-      "static/chunks/app/book-now/page-0032dd752169505f.js"
-    ],
-    "/confirmation/page": [
-      "static/chunks/webpack-e3cd1c210444f1f1.js",
-      "static/chunks/4bd1b696-08d00eb906351da0.js",
-      "static/chunks/684-679ebacd6058a153.js",
-      "static/chunks/main-app-7946eb05cde26914.js",
-      "static/chunks/app/confirmation/page-f3faa79963d801f4.js"
-    ],
-    "/dmn-redirect/page": [
-      "static/chunks/webpack-e3cd1c210444f1f1.js",
-      "static/chunks/4bd1b696-08d00eb906351da0.js",
-      "static/chunks/684-679ebacd6058a153.js",
-      "static/chunks/main-app-7946eb05cde26914.js",
-      "static/chunks/app/dmn-redirect/page-5239bbae9b59aecd.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/page": [
-      "static/chunks/webpack-e3cd1c210444f1f1.js",
-      "static/chunks/4bd1b696-08d00eb906351da0.js",
-      "static/chunks/684-679ebacd6058a153.js",
-      "static/chunks/main-app-7946eb05cde26914.js",
-      "static/chunks/260-fadd50cff2a78982.js",
-      "static/chunks/app/page-755d9cc4ee653706.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ]
   }
 }
