@@ -55,11 +55,11 @@ const Parched: React.FC<any> = ({ data }) => {
   };
 
   return (
-    <section className="font-[var(--font-salford-sans)] bg-primary text-secondary flex flex-col xl:block items-center justify-center pb-[4.5rem]">
+    <section className="font-[var(--font-salford-sans)] bg-primary text-secondary flex flex-col xl:block items-center -mt-5 justify-center pb-[4.5rem]">
       {/* First Section */}
       <div className="px-8 font-['Salford_Sans']">
         <div className="px-8">
-          <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] my-[35px]">
+          <h3 className="font-black font-[var(--font-salford-sans)] text-center text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] my-[35px]">
             {data.parchedTitle === "parched? peckish?" ? (
               <Fragment>
                 parched? <br /> <span className="-ml-12">peckish?</span>
