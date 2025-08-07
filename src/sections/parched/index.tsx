@@ -76,7 +76,7 @@ const Parched: React.FC<any> = ({ data }) => {
             <div className="w-[60%] lg:w-[32%] relative">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_2.data.attributes.url}`}
-                className=" aspect-[1/1]"
+                className=" aspect-[1/1] object-cover"
                 fill
                 alt=""
               />
@@ -116,7 +116,7 @@ const Parched: React.FC<any> = ({ data }) => {
             <div className="w-[60%] lg:w-[32%] relative">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_1.data.attributes.url}`}
-                className=" aspect-[1/1]"
+                className=" aspect-[1/1] object-cover"
                 fill
                 alt=""
               />
@@ -133,10 +133,10 @@ const Parched: React.FC<any> = ({ data }) => {
                 className={`absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-[50%] bottom-[-5px] left-[-5px] md:bottom-[-30px] md:left-[-30px]`}
               ></span>
             </div>
-            <div className="flex flex-col lg:max-w-[428px]  w-[80%]  mb-12 ">
+            <div className="flex flex-col lg:max-w-[428px]  w-[80%]  ">
               <div
                 dangerouslySetInnerHTML={{ __html: data.bigpennyDescription }}
-                className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] text-center md:mb-0  mt-8 lg:mt-0 text-secondary font-semibold"
+                className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] text-center md:mb-0  mt-8 lg:mt-0 text-secondary font-semibold mb-12"
               ></div>
               <BookNowElliptic className="my-7" orangeBackground />
             </div>
@@ -162,7 +162,7 @@ const Parched: React.FC<any> = ({ data }) => {
           <div className="w-[60%] lg:w-[32%] relative">
             <Image
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_3.data.attributes.url}`}
-              className=" aspect-[1/1]"
+              className=" aspect-[1/1] object-cover"
               fill
               alt=""
             />
