@@ -55,9 +55,9 @@ const Parched: React.FC<any> = ({ data }) => {
   };
 
   return (
-    <section className="font-[var(--font-salford-sans)] bg-primary text-secondary flex flex-col items-center -mt-9 justify-center pb-[4.5rem]">
+    <section className="font-[var(--font-salford-sans)] bg-primary text-secondary flex flex-col -mt-9 justify-center pb-[4.5rem]">
       {/* First Section */}
-      <div className="px-8 font-['Salford_Sans']">
+      <div className="px-8 font-['Salford_Sans'] w-full">
         <div className="px-8">
           <h3 className="font-black font-[var(--font-salford-sans)] text-center text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] my-[35px]">
             {data.parchedTitle === "parched? peckish?" ? (
@@ -91,7 +91,7 @@ const Parched: React.FC<any> = ({ data }) => {
       </div>
 
       {/* Second Section */}
-      <div className="px-8 font-['Salford_Sans']">
+      <div className="px-8 font-['Salford_Sans'] w-full">
         <div className="lg:mt-12 px-10 lg:flex lg:flex-col items-center mt-8">
           <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] text-center font-['Salford_Sans']">
             {data.bigpennyDownstairs ===
@@ -129,7 +129,7 @@ const Parched: React.FC<any> = ({ data }) => {
       </div>
 
       {/* Third Section */}
-      <div className="px-8 font-['Salford_Sans']">
+      <div className="px-8 font-['Salford_Sans'] w-full">
         <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] text-center lg:text-[90px] text-center uppercase lg:leading-[65px] leading-[46px] my-[35px]">
           {data.about === "parched? peckish?" ? (
             <Fragment>
