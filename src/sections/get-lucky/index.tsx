@@ -40,13 +40,13 @@ const GetLucky:React.FC<any> = ({ data }) => {
             {insertLineBreaks(data.heroText, 10)}
           </h1>
           <div className="relative w-[317px] h-[150px] lg:w-[300px] lg:h-[140px] xl:w-[400px] xl:h-[190px] mx-auto xl:mt-[18px] lg:mt-[30px] 2xl:hidden">
-            <Image
+            <img
               src={`${data.logo.data.attributes.url}`}
               alt="Flukes"
               className=""
             />
           </div>
-          <Image
+          <img
             src={`${data.logo.data.attributes.url}`}
             alt="Flukes"
             width={556}
@@ -79,7 +79,7 @@ const GetLucky:React.FC<any> = ({ data }) => {
             className="relative w-[314.17px] h-[271.02px] 
                     lg:w-[400px] lg:h-[345px] xl:w-[490px] xl:h-[420px]"
           >
-            <Image
+            <img
               src={`${data.image.data.attributes.url}`}
               alt="Flukes"
               fill
@@ -93,7 +93,7 @@ const GetLucky:React.FC<any> = ({ data }) => {
         </div>
 
         <div className="hidden 2xl:block bg-primary w-[713px] h-[800px] flex items-center justify-center relative ml-[75px]">
-          <Image
+          <img
             src={`${data.image.data.attributes.url}`}
             alt="Flukes"
             width={637}
@@ -112,8 +112,8 @@ const GetLucky:React.FC<any> = ({ data }) => {
         </h2>
       </div>
       {/* <h3 className='font-black text-[70px] text-center leading-13 uppercase font-salford lg:text-[80px] lg:leading-[60px] xl:text-[100px] xl:leading-[75px] 2xl:text-[110px] 2xl:leading-[90px] hidden lg:block text-["#D2451E"] my-9'>opening 8 may</h3> */}
-      {/* <Image src="/flukes/illustrations/separator.svg" alt='Flukes' width={341} height={22} className='mx-auto mt-[15px] lg:hidden' />
-            <Image src="/flukes/illustrations/separator-desktop.svg" alt='Flukes' width={1518} height={43.57} className='mx-auto mt-[105px] mb-[30px] hidden lg:block' /> */}
+      {/* <img src="/flukes/illustrations/separator.svg" alt='Flukes' width={341} height={22} className='mx-auto mt-[15px] lg:hidden' />
+            <img src="/flukes/illustrations/separator-desktop.svg" alt='Flukes' width={1518} height={43.57} className='mx-auto mt-[105px] mb-[30px] hidden lg:block' /> */}
     </section>
   );
 };

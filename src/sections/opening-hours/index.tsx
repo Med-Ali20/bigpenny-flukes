@@ -8,7 +8,7 @@ const OpeningHours: React.FC<any> = ({ data }) => {
       <section className="bg-primary -mt-12">
         {/* Pseudo-element to cover the bottom half */}
         {/* <div className="absolute inset-x-0 bottom-0 h-1/2 bg-[#FBFBF8] content-[''] z-10"></div> */}
-        <Image
+        <img
           src="/flukes/illustrations/separator.svg"
           alt="Flukes"
           width={341}
@@ -19,7 +19,7 @@ const OpeningHours: React.FC<any> = ({ data }) => {
               "brightness(0) saturate(100%) invert(95%) sepia(8%) saturate(433%) hue-rotate(18deg) brightness(98%) contrast(93%)",
           }}
         />
-        <Image
+        <img
           src="/flukes/illustrations/separator-desktop.svg"
           alt="Flukes"
           width={1518}

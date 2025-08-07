@@ -58,7 +58,7 @@ const Parched: React.FC<any> = ({ data }) => {
     <section className="font-[var(--font-salford-sans)] bg-primary text-secondary flex flex-col xl:block items-center justify-center pb-[4.5rem]">
       <div className='font-["Salford_Sans"] xl:flex text-center xl:w-full xl:justify-center'>
         <div className="px-8">
-          {/* <Image src="/flukes/illustrations/drink.jpg" alt='drink' className='rotate-[2.8]  lg:hidden mx-auto mt-[65px]' width={258.28} height={350.65} /> */}
+          {/* <img src="/flukes/illustrations/drink.jpg" alt='drink' className='rotate-[2.8]  lg:hidden mx-auto mt-[65px]' width={258.28} height={350.65} /> */}
           <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] my-[35px]">
             {data.parchedTitle === "parched? peckish?" ? (
               <Fragment>
@@ -74,10 +74,10 @@ const Parched: React.FC<any> = ({ data }) => {
               className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center   w-[80%] mt-8 lg:mt-0  text-secondary font-semibold"
             ></div>
             <div className="w-[60%] lg:w-[32%] relative">
-              <Image
+              <img
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_2.data.attributes.url}`}
                 className=" aspect-[1/1] object-cover"
-                fill
+              
                 alt=""
               />
               <span
@@ -95,12 +95,12 @@ const Parched: React.FC<any> = ({ data }) => {
             </div>
           </div>
         </div>
-        {/* <Image src="/flukes/illustrations/drink.jpg" alt='drink' className='rotate-[2.8] lg:mx-auto lg:mt-7 xl:mx-0 mt-0 hidden lg:block' width={503.53} height={683.61} /> */}
+        {/* <img src="/flukes/illustrations/drink.jpg" alt='drink' className='rotate-[2.8] lg:mx-auto lg:mt-7 xl:mx-0 mt-0 hidden lg:block' width={503.53} height={683.61} /> */}
       </div>
       <div className="flex font-salford text-center lg:justify-center">
-        {/* <Image src="/flukes/illustrations/bigpenny.jpg" alt='drink' className='rotate-[2.8] hidden lg:block' width={503.53} height={683.61} /> */}
+        {/* <img src="/flukes/illustrations/bigpenny.jpg" alt='drink' className='rotate-[2.8] hidden lg:block' width={503.53} height={683.61} /> */}
         <div className="lg:mt-12 px-10 lg:flex lg:flex-col items-center mt-8">
-          {/* <Image src="/flukes/illustrations/bigpenny.jpg" alt='drink' className='rotate-[2.8] lg:hidden mx-auto mt-[65px]' width={258.28} height={350.65} /> */}
+          {/* <img src="/flukes/illustrations/bigpenny.jpg" alt='drink' className='rotate-[2.8] lg:hidden mx-auto mt-[65px]' width={258.28} height={350.65} /> */}
           <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] font-['Salford_Sans']">
             {data.bigpennyDownstairs ===
             "And Big Penny Social’s Just Downstairs..." ? (
@@ -114,10 +114,10 @@ const Parched: React.FC<any> = ({ data }) => {
           </h3>
           <div className="flex flex-col lg:flex-row items-center justify-around my-12">
             <div className="w-[60%] lg:w-[32%] relative">
-              <Image
+              <img
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_1.data.attributes.url}`}
                 className=" aspect-[1/1] object-cover"
-                fill
+              
                 alt=""
               />
               <span
@@ -144,7 +144,7 @@ const Parched: React.FC<any> = ({ data }) => {
         </div>
       </div>
       <div className="px-8 font-['Salford_Sans']">
-        {/* <Image src="/flukes/illustrations/drink.jpg" alt='drink' className='rotate-[2.8]  lg:hidden mx-auto mt-[65px]' width={258.28} height={350.65} /> */}
+        {/* <img src="/flukes/illustrations/drink.jpg" alt='drink' className='rotate-[2.8]  lg:hidden mx-auto mt-[65px]' width={258.28} height={350.65} /> */}
         <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] text-center lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] my-[35px]">
           {data.about === "parched? peckish?" ? (
             <Fragment>
@@ -160,10 +160,10 @@ const Parched: React.FC<any> = ({ data }) => {
             className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center  mb-12 md:mb-0  w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary font-semibold"
           ></div>
           <div className="w-[60%] lg:w-[32%] relative">
-            <Image
+            <img
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_3.data.attributes.url}`}
               className=" aspect-[1/1] object-cover"
-              fill
+            
               alt=""
             />
             <span

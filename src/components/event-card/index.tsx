@@ -81,16 +81,16 @@ const EventCard: React.FC<Props> = ({
         >
           <div className="flex items-center justify-center w-[295.72px] h-[223.95px] mx-auto relative z-1 min-[1400px]:w-[322px] min-[1400px]:h-[259px]">
             {/* Replace background image with Next.js Image */}
-            <Image
+            <img
               src={image}
               alt="Event Image"
-              fill
+              // fill
               className="object-cover"
               sizes="(min-width: 1400px) 322px, 295.72px"
             />
             
             {/* Logo overlay */}
-            <Image
+            <img
               src="/flukes/illustrations/logo.svg"
               alt="Flukes"
               width={107.22}
