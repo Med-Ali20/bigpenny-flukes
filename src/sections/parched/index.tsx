@@ -76,7 +76,7 @@ const Parched: React.FC<any> = ({ data }) => {
             <div className="w-[60%] lg:w-[32%] relative">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_1.data.attributes.url}`}
-                className=" aspect-[1/1] object-cover"
+                className=" aspect-[1/1] object-cover w-[250px] h-[250px] lg:w-[580px] lg:h-[580px]"
                 alt=""
               />
               <span
@@ -111,11 +111,11 @@ const Parched: React.FC<any> = ({ data }) => {
               data.bigpennyDownstairs
             )}
           </h3>
-          <div className="flex flex-col lg:flex-row-reverse items-center justify-around mt-12">
+          <div className="flex flex-col lg:flex-row items-center justify-around mt-12">
             <div className="w-[60%] lg:w-[32%] relative">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_2.data.attributes.url}`}
-                className=" aspect-[1/1] object-cover"
+                className=" aspect-[1/1] object-cover w-[250px] h-[250px] lg:w-[580px] lg:h-[580px]"
                 alt=""
               />
               <span
@@ -159,7 +159,7 @@ const Parched: React.FC<any> = ({ data }) => {
           <div className="w-[60%] lg:w-[32%] relative">
             <Image
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_3.data.attributes.url}`}
-              className=" aspect-[1/1] object-cover"
+              className=" aspect-[1/1] object-cover w-[250px] h-[250px] lg:w-[580px] lg:h-[580px]"
               alt=""
             />
             <span
