@@ -40,15 +40,15 @@ const NittyGritty: React.FC<any> = ({ data }) => {
           style={{ left: `${index * 5}rem` }}
         />
       ))}
-      <h1 className="text-[70px] font-black leading-[6rem] uppercase lg:text-[7rem]">
+      <h1 className="text-[40px] font-black leading-[5rem] lg:leading-[2rem] uppercase lg:text-[70px] 2xl:text-[80px]">
         {data.title}
       </h1>
-      <p className="mt-[1rem] mb-[142px] mx-auto text-[25px] leading-[32px] min-[1400px]:text-[45px] min-[1400px]:leading-[48px] max-w-[75%]">
+      <p className="mt-[2rem] md:mt-[1rem] lg:mt-[40px] mb-[75px] md:mb-[100px] lg:mb-[172px] 2xl:mb-[200px] mx-auto text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] max-w-[75%] font-['Roc_Grotesk']">
         {data.description}
       </p>
       <div className="w-full lg:flex lg:justify-center items-center relative">
         <EventCard
-          className="bg-[#FBFBF8] min-[1000px]:-mr-6 min-[1400px]:-mr-5 lg:-mt-18 lg:ml-auto"
+          className="bg-secondary min-[1000px]:-mr-6 min-[1400px]:-mr-5 lg:-mt-18 lg:ml-auto"
           rotation={2.17}
           image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[0].image.data.attributes.url}`}
           title={data.card[0].title}
@@ -66,7 +66,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
           tabToFlip={true}
         />
         <EventCard
-          className="bg-[#FBFBF8] lg:-mr-10 lg:-mb-18 lg:ml-0"
+          className="bg-secondary lg:-mr-10 lg:-mb-18 lg:ml-0"
           rotation={-1.78}
           image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[1].image.data.attributes.url}`}
           title={data.card[1].title}
@@ -83,7 +83,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
           heightMobile={178}
         />
         <EventCard
-          className="bg-[#FBFBF8] lg:-mt-24 lg:-ml-2 lg:mr-0"
+          className="bg-secondary lg:-mt-24 lg:-ml-2 lg:mr-0"
           rotation={1.29}
           image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[2].image.data.attributes.url}`}
           title={data.card[2].title}
@@ -100,7 +100,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
           heightMobile={90.21}
         />
         <EventCard
-          className="bg-[#FBFBF8] min-[1000px]:-ml-5 min-[1400px]:-ml-5 lg:-mb-18 lg:mr-auto"
+          className="bg-secondary min-[1000px]:-ml-5 min-[1400px]:-ml-5 lg:-mb-18 lg:mr-auto"
           rotation={-1.53}
           image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[3].image.data.attributes.url}`}
           title={data.card[3].title}

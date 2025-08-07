@@ -1,7 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
-  "/confirmation/page": "app/confirmation/page.js",
   "/book-now/page": "app/book-now/page.js",
-  "/dmn-redirect/page": "app/dmn-redirect/page.js"
+  "/page": "app/page.js"
 }

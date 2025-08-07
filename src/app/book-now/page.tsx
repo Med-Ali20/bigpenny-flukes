@@ -34,7 +34,7 @@ const BookNow: React.FC<any> = () => {
       link.rel = "stylesheet";
       link.type = "text/css";
       link.href =
-        "https://onsass.designmynight.com/?background-color=%23d2451e&primary-color=%23ffffff&body-text-color=%23000000&outer-border-color=gray";
+        "https://onsass.designmynight.com/?background-color=%23EBE9DB&primary-color=%23ffffff&body-text-color=%23000000&outer-border-color=gray";
       link.setAttribute("data-dmn-style", "true");
       
       // Wait for stylesheet to load
@@ -106,7 +106,7 @@ const BookNow: React.FC<any> = () => {
   }, []); // Empty dependency array to run only once
 
   return (
-    <main className="flex flex-col items-center pt-8 min-h-screen px-6 md:px-12 font-['Salford_Sans']">
+    <main className="flex flex-col items-center py-8 min-h-screen px-6 md:px-12 font-['Salford_Sans'] bg-primary text-secondary">
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="flex justify-center">
           <div

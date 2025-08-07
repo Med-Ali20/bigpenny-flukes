@@ -54,7 +54,7 @@ export default async function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        <header className="flex py-[17px] px-[24px] md:py-[24px] md:px-[60px] text-primary border-b-[1rem] border-primary w-full items-center uppercase sticky top-0 bg-[#ebe9db] z-90">
+        <header className="flex py-[17px] px-[24px] md:py-[24px] md:px-[60px] text-primary border-b-[1rem] border-primary w-full items-center uppercase !sticky top-0 bg-[#ebe9db] z-50" style={{position: 'sticky'}}>
           {/* Mobile Navigation */}
 
           {/* Desktop Navigation */}
@@ -77,7 +77,7 @@ export default async function RootLayout({
           </nav> */}
 
           {/* Logo */}
-          <a href="/flukes/" className="mr-auto min-[1400px]:hidden">
+          <a href="/flukes/" className="mr-auto lg:hidden">
             <Image
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${header.logo.data.attributes.url}`}
               alt="Logo"
@@ -87,13 +87,14 @@ export default async function RootLayout({
           </a>
           <a
             href="/flukes/"
-            className="mr-auto hidden min-[1400px]:block my-[5px]"
+            className="mr-auto hidden lg:block my-[5px]"
           >
             <Image
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${header.logo.data.attributes.url}`}
               alt="Logo"
-              width={320}
-              height={62}
+              // width={320}
+              // height={62}
+              className="lg:w-[22rem] 2xl:-[30rem]"
             />
           </a>
 

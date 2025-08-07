@@ -7,8 +7,7 @@ import Image from "next/image";
 import BookNowElliptic from "@/components/book-now-elliptic";
 
 const Parched: React.FC<any> = ({ data }) => {
-
-  console.log(data.image_1.data.attributes.url)
+  console.log(data.image_1.data.attributes.url);
 
   const stripHtmlTagsAndDecode = (html: string): string => {
     const text = html.replace(/<[^>]*>/g, "").trim();
@@ -56,11 +55,11 @@ const Parched: React.FC<any> = ({ data }) => {
   };
 
   return (
-    <section className="font-[var(--font-salford-sans)] bg-primary text-secondary flex flex-col xl:block items-center justify-center pb-[3rem]">
+    <section className="font-[var(--font-salford-sans)] bg-primary text-secondary flex flex-col xl:block items-center justify-center pb-[4.5rem]">
       <div className='font-["Salford_Sans"] xl:flex text-center xl:w-full xl:justify-center'>
         <div className="px-8">
           {/* <Image src="/flukes/illustrations/drink.jpg" alt='drink' className='rotate-[2.8]  lg:hidden mx-auto mt-[65px]' width={258.28} height={350.65} /> */}
-          <h3 className="font-black font-[var(--font-salford-sans)] text-[70px] lg:text-[111px] uppercase lg:leading-[85px] leading-[51px] my-[35px]">
+          <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] my-[35px]">
             {data.parchedTitle === "parched? peckish?" ? (
               <Fragment>
                 parched? <br /> <span className="-ml-12">peckish?</span>
@@ -69,14 +68,17 @@ const Parched: React.FC<any> = ({ data }) => {
               data.parchedTitle
             )}
           </h3>
-          <div className="flex flex-col-reverse lg:flex-row items-center justify-around">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-around mt-12">
             <div
               dangerouslySetInnerHTML={{ __html: data.parchedDescription }}
-              className="lg:max-w-[728px] text-center text-[25px] md:[text-30px] leading-[27px] min-[1400px]:leading-[42px] min-[1400px]:text-[45px] w-[80%] mt-8 lg:mt-0 lg:w-[40%] text-white font-semibold"
+              className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center   w-[80%] mt-8 lg:mt-0  text-secondary font-semibold"
             ></div>
             <div className="w-[60%] lg:w-[32%] relative">
-              <Image src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_2.data.attributes.url}`}
-               alt="" />
+              <Image
+                src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_2.data.attributes.url}`}
+                className=" aspect-[1/1] object-cover"
+                alt=""
+              />
               <span
                 className={`absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-[50%] top-[-5px] left-[-5px] md:top-[-30px] md:left-[-30px]`}
               ></span>
@@ -98,7 +100,7 @@ const Parched: React.FC<any> = ({ data }) => {
         {/* <Image src="/flukes/illustrations/bigpenny.jpg" alt='drink' className='rotate-[2.8] hidden lg:block' width={503.53} height={683.61} /> */}
         <div className="lg:mt-12 px-10 lg:flex lg:flex-col items-center mt-8">
           {/* <Image src="/flukes/illustrations/bigpenny.jpg" alt='drink' className='rotate-[2.8] lg:hidden mx-auto mt-[65px]' width={258.28} height={350.65} /> */}
-          <h3 className='font-["Salford_Sans"] font-black text-[60px] lg:text-[140px] uppercase lg:leading-[110px] leading-[51px] my-[15px]'>
+          <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] font-['Salford_Sans']">
             {data.bigpennyDownstairs ===
             "And Big Penny Social’s Just Downstairs..." ? (
               <Fragment>
@@ -111,7 +113,11 @@ const Parched: React.FC<any> = ({ data }) => {
           </h3>
           <div className="flex flex-col lg:flex-row items-center justify-around my-12">
             <div className="w-[60%] lg:w-[32%] relative">
-              <Image src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_1.data.attributes.url}`} alt="" />
+              <Image
+                src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_1.data.attributes.url}`}
+                className=" aspect-[1/1] object-cover"
+                alt=""
+              />
               <span
                 className={`absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-[50%] top-[-5px] left-[-5px] md:top-[-30px] md:left-[-30px]`}
               ></span>
@@ -125,18 +131,18 @@ const Parched: React.FC<any> = ({ data }) => {
                 className={`absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-[50%] bottom-[-5px] left-[-5px] md:bottom-[-30px] md:left-[-30px]`}
               ></span>
             </div>
-            <div className="lg:max-w-[728px] text-center text-[25px] md:[text-30px] leading-[27px] min-[1400px]:leading-[42px] min-[1400px]:text-[45px] w-[80%] mt-8 lg:mt-0 lg:w-[40%] text-white font-['Salford_Sans'] font-semibold flex flex-col gap-10">
+            <div className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center   w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary  font-semibold flex flex-col gap-10">
               <div
                 dangerouslySetInnerHTML={{ __html: data.bigpennyDescription }}
               ></div>
-              <BookNowElliptic className="my-4" orangeBackground />
+              <BookNowElliptic className="my-7" orangeBackground />
             </div>
           </div>
         </div>
       </div>
       <div className="px-8 font-['Salford_Sans']">
         {/* <Image src="/flukes/illustrations/drink.jpg" alt='drink' className='rotate-[2.8]  lg:hidden mx-auto mt-[65px]' width={258.28} height={350.65} /> */}
-        <h3 className="font-black text-center font-[var(--font-salford-sans)] text-[70px] lg:text-[111px] uppercase lg:leading-[85px] leading-[51px] my-[35px]">
+        <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] text-center lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] my-[35px]">
           {data.about === "parched? peckish?" ? (
             <Fragment>
               parched? <br /> <span className="-ml-12">peckish?</span>
@@ -145,13 +151,17 @@ const Parched: React.FC<any> = ({ data }) => {
             data.about
           )}
         </h3>
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-around my-12">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-around mt-12">
           <div
             dangerouslySetInnerHTML={{ __html: data.aboutDescription }}
-            className="lg:max-w-[728px] text-center text-[25px] md:[text-30px] mb-12 lg:mb-0 leading-[27px] min-[1400px]:leading-[42px] min-[1400px]:text-[45px] w-[80%] mt-8 lg:mt-0 lg:w-[40%] text-white font-semibold"
+            className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center  mb-12 md:mb-0  w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary font-semibold"
           ></div>
           <div className="w-[60%] lg:w-[32%] relative">
-            <Image src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_3.data.attributes.url}`} alt="" />
+            <Image
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_3.data.attributes.url}`}
+              className=" aspect-[1/1] object-cover"
+              alt=""
+            />
             <span
               className={`absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-[50%] top-[-5px] left-[-5px] md:top-[-30px] md:left-[-30px]`}
             ></span>

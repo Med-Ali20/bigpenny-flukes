@@ -77,7 +77,7 @@ const EventCard: React.FC<Props> = ({
         style={{ willChange: "transform" }}
       >
         <div
-          className={`bg-[#FBFBF8] absolute w-full h-full border-[3px] mx-auto rounded-2xl p-[12px] flex flex-col inset-0 backface-hidden min-[1400px]:p-[20px]`}
+          className={`bg-secondary absolute w-full h-full border-[3px] mx-auto rounded-2xl p-[12px] flex flex-col inset-0 backface-hidden min-[1400px]:p-[20px]`}
         >
           <div className="flex items-center justify-center w-[295.72px] h-[223.95px] mx-auto relative z-1 min-[1400px]:w-[322px] min-[1400px]:h-[259px]">
             {/* Replace background image with Next.js Image */}
@@ -99,10 +99,10 @@ const EventCard: React.FC<Props> = ({
             />
             
             {/* Corner decorations */}
-            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] top-[-7px] left-[-7px] z-10"></span>
-            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] top-[-7px] right-[-7px] z-10"></span>
-            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] bottom-[-7px] right-[-7px] z-10"></span>
-            <span className="absolute bg-[#FBFBF8] w-[18px] h-[18px] rounded-[50%] bottom-[-7px] left-[-5px] z-10"></span>
+            <span className="absolute bg-secondary w-[18px] h-[18px] rounded-[50%] top-[-7px] left-[-7px] z-10"></span>
+            <span className="absolute bg-secondary w-[18px] h-[18px] rounded-[50%] top-[-7px] right-[-7px] z-10"></span>
+            <span className="absolute bg-secondary w-[18px] h-[18px] rounded-[50%] bottom-[-7px] right-[-7px] z-10"></span>
+            <span className="absolute bg-secondary w-[18px] h-[18px] rounded-[50%] bottom-[-7px] left-[-5px] z-10"></span>
           </div>
           <h3 className="mt-8 text-left font-black text-[40px] leading-[35px] mb-2 uppercase">
             {title}
@@ -126,18 +126,17 @@ const EventCard: React.FC<Props> = ({
           </p>
         </div>
         <div
-          className={`bg-[#FBFBF8] w-full h-full p-[16px] border-[3px] mx-auto rounded-2xl p-[12px] flex flex-col -rotate-[2.17deg] absolute inset-0 h-full w-full backface-hidden rotate-y-180 ${backsideClassName}`}
+          className={`bg-secondary w-full h-full p-[16px] border-[3px] mx-auto rounded-2xl p-[12px] flex flex-col -rotate-[2.17deg] absolute inset-0 h-full w-full backface-hidden rotate-y-180 ${backsideClassName}`}
         >
           <h3 className="text-left font-black text-[40px] lg:text-[40px] uppercase">
             {backsideTitle}
           </h3>
-          <p className="text-left text-[25px] leading-[30px]">
+          <p className="text-left text-left text-[25px] min-[1400px]:text-[30px] leading-[25px] min-[1400px]:leading-[30px]">
             {backsideDescription}
           </p>
           <BookNowRectangular
             className="mr-auto text-left mt-7 !text-[25px] !w-[185.08px] !h-[53.58px] leading-[25px]"
             text="book now"
-            spanColor="#FBFBF8"
           />
         </div>
       </div>
