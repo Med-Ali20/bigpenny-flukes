@@ -55,7 +55,7 @@ const Parched: React.FC<any> = ({ data }) => {
   };
 
   return (
-    <section className="font-[var(--font-salford-sans)] bg-primary text-secondary flex flex-col xl:block items-center -mt-5 justify-center pb-[4.5rem]">
+    <section className="font-[var(--font-salford-sans)] bg-primary text-secondary flex flex-col xl:block items-center -mt-7 justify-center pb-[4.5rem]">
       {/* First Section */}
       <div className="px-8 font-['Salford_Sans']">
         <div className="px-8">
