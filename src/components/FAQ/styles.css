@@ -1,0 +1,18 @@
+.faq1_answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+  
+  .faq1_accordion.active .faq1_answer {
+    max-height: 500px; /* Set a large enough max-height */
+  }
+  
+  .faq1_icon {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .faq1_accordion.active .faq1_icon {
+    transform: rotate(180deg); /* Rotates the arrow upwards */
+  }
+  

@@ -118,7 +118,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
         />
       </div>
       <BookNowRectangular
-        className="!w-[286.85px] !h-[86.53px] !text-[40px] mx-auto mt-20 lg:mt-30"
+        className="w-[160px] h-[55px] text-[20px] lg:w-[286.85px] lg:h-[86.53px] lg:text-[40px] mx-auto mt-20 lg:mt-30"
         text="book your game"
       />
       <div className="bg-primary relative h-[5rem] mt-15">

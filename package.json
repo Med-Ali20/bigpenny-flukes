@@ -16,7 +16,9 @@
     "react": "^19.0.0",
     "react-cookie-consent": "^9.0.0",
     "react-dom": "^19.0.0",
-    "react-fast-marquee": "^1.6.5"
+    "react-fast-marquee": "^1.6.5",
+    "swiper": "^11.2.10",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -80,30 +80,27 @@ const EventCard: React.FC<Props> = ({
           className={`bg-secondary absolute w-full h-full border-[3px] mx-auto rounded-2xl p-[12px] flex flex-col inset-0 backface-hidden min-[1400px]:p-[20px]`}
         >
           <div className="flex items-center justify-center w-[295.72px] h-[223.95px] mx-auto relative z-1 min-[1400px]:w-[322px] min-[1400px]:h-[259px]">
-            {/* Replace background image with Next.js Image */}
-            <Image
+            <img
               src={image}
               alt="Event Image"
-              fill
-              className="object-cover"
-              sizes="(min-width: 1400px) 322px, 295.72px"
+              className="absolute inset-0 w-full h-full object-cover rounded-lg"
             />
-            
+
             {/* Logo overlay */}
-            <Image
-              src="/flukes/illustrations/logo.svg"
+            <img
+              src="/flukes/illustrations/logo-off-white.svg"
               alt="Flukes"
               width={107.22}
               height={41.51}
               className="absolute -bottom-[27px] left-[100px] z-50"
             />
-            
-            {/* Corner decorations */}
+
             <span className="absolute bg-secondary w-[18px] h-[18px] rounded-[50%] top-[-7px] left-[-7px] z-10"></span>
             <span className="absolute bg-secondary w-[18px] h-[18px] rounded-[50%] top-[-7px] right-[-7px] z-10"></span>
             <span className="absolute bg-secondary w-[18px] h-[18px] rounded-[50%] bottom-[-7px] right-[-7px] z-10"></span>
             <span className="absolute bg-secondary w-[18px] h-[18px] rounded-[50%] bottom-[-7px] left-[-5px] z-10"></span>
           </div>
+
           <h3 className="mt-8 text-left font-black text-[40px] leading-[35px] mb-2 uppercase">
             {title}
           </h3>

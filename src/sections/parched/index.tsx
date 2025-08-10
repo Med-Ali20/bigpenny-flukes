@@ -59,7 +59,7 @@ const Parched: React.FC<any> = ({ data }) => {
       {/* First Section */}
       <div className="px-8 font-['Salford_Sans'] w-full">
         <div className="px-8">
-          <h3 className="font-black font-[var(--font-salford-sans)] text-center text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] my-[35px]">
+          <h3 className="font-black font-[var(--font-salford-sans)] text-center text-[45px] lg:text-[90px] uppercase lg:leading-[65px] leading-[32px] my-[35px]">
             {data.parchedTitle === "parched? peckish?" ? (
               <Fragment>
                 parched? <br /> <span className="-ml-12">peckish?</span>
@@ -74,7 +74,7 @@ const Parched: React.FC<any> = ({ data }) => {
               className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 text-secondary font-semibold"
             ></div>
             <div className="relative">
-              <Image
+              <img
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_1.data.attributes.url}`}
                 width={450}
                 height={450}
@@ -93,7 +93,7 @@ const Parched: React.FC<any> = ({ data }) => {
       {/* Second Section */}
       <div className="px-8 font-['Salford_Sans'] w-full">
         <div className="lg:mt-12 px-10 lg:flex lg:flex-col items-center mt-8">
-          <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] lg:text-[90px] uppercase lg:leading-[65px] leading-[46px] text-center font-['Salford_Sans']">
+          <h3 className="font-black font-[var(--font-salford-sans)] text-[45px] lg:text-[90px] uppercase lg:leading-[65px] leading-[32px] text-center font-['Salford_Sans']">
             {data.bigpennyDownstairs ===
             "And Big Penny Social’s Just Downstairs..." ? (
               <Fragment>
@@ -106,7 +106,7 @@ const Parched: React.FC<any> = ({ data }) => {
           </h3>
           <div className="flex flex-col lg:flex-row items-center justify-around w-full mt-12 lg:max-w-[1200px] lg:mx-auto">
             <div className="relative">
-              <Image
+              <img
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_2.data.attributes.url}`}
                 width={450}
                 height={450}
@@ -130,7 +130,7 @@ const Parched: React.FC<any> = ({ data }) => {
 
       {/* Third Section */}
       <div className="px-8 font-['Salford_Sans'] w-full">
-        <h3 className="font-black font-[var(--font-salford-sans)] text-[60px] text-center lg:text-[90px] text-center uppercase lg:leading-[65px] leading-[46px] my-[35px]">
+        <h3 className="font-black font-[var(--font-salford-sans)] text-[45px] text-center lg:text-[90px] text-center uppercase lg:leading-[65px] leading-[32px] my-[35px]">
           {data.about === "parched? peckish?" ? (
             <Fragment>
               parched? <br /> <span className="-ml-12">peckish?</span>
@@ -145,7 +145,7 @@ const Parched: React.FC<any> = ({ data }) => {
             className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center mb-12 md:mb-0 w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary font-semibold"
           ></div>
           <div className="relative">
-            <Image
+            <img
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_3.data.attributes.url}`}
               width={450}
               height={450}

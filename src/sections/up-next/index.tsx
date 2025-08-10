@@ -6,7 +6,7 @@ import BookNowRectangular from "@/components/book-now-rectaungular";
 const UpNext: React.FC<any> = ({ data }) => {
   return (
     <section className='pt-[3rem] pb-[6rem] bg-primary text-secondary text-center mx-auto font-["Salford_Sans"]'>
-      <Image
+      <img
         src="/flukes/illustrations/separator.svg"
         style={{
           filter:
@@ -17,7 +17,7 @@ const UpNext: React.FC<any> = ({ data }) => {
         height={22}
         className="mx-auto mb-[3rem] md:hidden"
       />
-      <Image
+      <img
         src="/flukes/illustrations/separator-desktop.svg"
         style={{
           filter:
@@ -51,7 +51,7 @@ const UpNext: React.FC<any> = ({ data }) => {
           text="book your game"
         />
       </div>
-      <Image
+      <img
         src="/flukes/illustrations/separator.svg"
         style={{
           filter:
@@ -62,7 +62,7 @@ const UpNext: React.FC<any> = ({ data }) => {
         height={22}
         className="mx-auto my-[3rem] md:hidden"
       />
-      <Image
+      <img
         src="/flukes/illustrations/separator-desktop.svg"
         style={{
           filter:
@@ -76,7 +76,7 @@ const UpNext: React.FC<any> = ({ data }) => {
       <div
         className={`w-[80%] mx-auto px-[1.2rem] bg-primary text-[#ebe9db] relative flex items-center justify-center`}
       >
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image.data.attributes.url}`}
           className="w-full mx-auto"
           alt=""
