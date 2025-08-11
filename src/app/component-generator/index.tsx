@@ -5,7 +5,6 @@ import FaqTabs from "@/components/FAQ";
 import Gallery from "@/components/Gallery";
 import HeroImage from "@/components/Hero-Image";
 import TextBlock from "@/components/Text-Block";
-import Grid from "@/components/Grid";
 import { v4 as uuidv4 } from "uuid";
 
 async function Components(Component: any) {
@@ -44,11 +43,6 @@ async function Components(Component: any) {
           Title={Component.Title}
           Images={Component.Images}
         />
-      );
-
-    case "section.grid":
-      return (
-        <Grid key={uuidv4()} Title={Component.Title} Event={Component.Event} />
       );
 
     case "section.hero-image":

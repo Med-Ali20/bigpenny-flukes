@@ -82,7 +82,7 @@ const GetLucky:React.FC<any> = ({ data }) => {
             <img
               src={`${data.image.data.attributes.url}`}
               alt="Flukes"
-              fill
+              // fill
               className="mx-auto my-auto"
             />
           </div>

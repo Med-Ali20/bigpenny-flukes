@@ -2,6 +2,10 @@ import React from "react";
 import { Metadata } from "next";
 import Components from "../component-generator";
 
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
+
 export const generateStaticParams = async () => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/flukes-pages`
@@ -16,9 +20,7 @@ export const generateStaticParams = async () => {
 
 export async function generateMetadata({
   params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
 
   const res = await fetch(
@@ -34,9 +36,10 @@ export async function generateMetadata({
   };
 }
 
-const page: React.FC<{ params: { slug: string } }> = async ({ params }) => {
+const Page: React.FC<PageProps> = async ({ params }) => {
   const { slug } = await params;
   console.log(slug);
+  
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/flukes-pages?filters[slug][$eq]=${slug}&populate=deep`
   );
@@ -46,4 +49,4 @@ const page: React.FC<{ params: { slug: string } }> = async ({ params }) => {
   return <div className="mb-12">{components?.map(Components)}</div>;
 };
 
-export default page;
+export default Page;
