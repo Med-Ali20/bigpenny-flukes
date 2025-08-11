@@ -3,6 +3,7 @@
 import React from "react";
 import { ContentPane } from "@/types";
 import BookNowRectangular from "@/components/book-now-rectaungular";
+import Image from "next/image";
 
 const ContentPaneComponent: React.FC<ContentPane> = ({
   title,
@@ -21,7 +22,7 @@ const ContentPaneComponent: React.FC<ContentPane> = ({
     <section className="section-4">
       {/* Desktop Image */}
       <div className="hidden lg:block w-full h-[60vh] relative overflow-hidden">
-        <img
+        <Image
           src={imageUrl}
           alt={imageName}
           className="w-full h-full object-cover object-center"
@@ -32,7 +33,7 @@ const ContentPaneComponent: React.FC<ContentPane> = ({
 
       {/* Mobile Image */}
       <div className="block lg:hidden w-full h-[35vh] relative overflow-hidden">
-        <img
+        <Image
           src={mobileImageUrl || imageUrl}
           alt={mobileImageName}
           className="w-full h-full object-cover object-center"

@@ -5,6 +5,8 @@ import { Swiper as SwiperType } from "swiper"; // Import Swiper's type
 import "swiper/css";
 import { useEffect, useState } from "react";
 import { DraggableCards, DraggableCard } from "@/types";
+import Image from "next/image";
+
 
 
 const DraggableCardsComponent: React.FC<DraggableCards> = ({ cards }) => {
@@ -38,7 +40,7 @@ const DraggableCardsComponent: React.FC<DraggableCards> = ({ cards }) => {
           href={card.link}
           target="_blank"
         >
-          <img
+          <Image
             src={`${process.env.NEXT_PUBLIC_BASE_URL}${card.image.data.attributes.url}`}
             alt="Card 1"
             className="w-full object-cover max-h-[300px] cursor-grab"

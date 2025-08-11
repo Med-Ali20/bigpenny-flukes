@@ -67,7 +67,7 @@ const FindFlukes: React.FC<any> = ({ data }) => {
               {data.car}
             </p>
 
-            <img
+            <Image
               src="/flukes/illustrations/separator-find-flukes.svg"
               alt="Flukes"
               width={687.85}
@@ -78,7 +78,7 @@ const FindFlukes: React.FC<any> = ({ data }) => {
         </div>
 
         {/* Mobile Separator */}
-        <img
+        <Image
           src="/flukes/illustrations/separator.svg"
           alt="Flukes"
           width={291.97}
@@ -89,7 +89,7 @@ const FindFlukes: React.FC<any> = ({ data }) => {
           <Map width={250} height={250}></Map>
         </div>
 
-        {/* <img src="/flukes/illustrations/separator.svg" alt='Flukes' width={291.97} height={22} className='mt-[25px] min-[1400px]:hidden ' /> */}
+        {/* <Image src="/flukes/illustrations/separator.svg" alt='Flukes' width={291.97} height={22} className='mt-[25px] min-[1400px]:hidden ' /> */}
       </div>
       <Marquee
         autoFill

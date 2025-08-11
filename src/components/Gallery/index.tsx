@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { Gallery } from "@/types";
+import Image from "next/image";
+
 
 interface ImageData {
   attributes: {
@@ -78,7 +80,7 @@ const GalleryComponent: React.FC<Gallery> = ({ Title, Images }) => {
                 onClick={() => openModal(index)}
               >
                 <div className="aspect-square w-full relative overflow-hidden bg-gray-200">
-                  <img
+                  <Image
                     src={`${process.env.NEXT_PUBLIC_BASE_URL}${image.attributes.url}`}
                     alt={image.attributes.name || `Gallery image ${index + 1}`}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -147,7 +149,7 @@ const GalleryComponent: React.FC<Gallery> = ({ Title, Images }) => {
 
             {/* Image Container */}
             <div className="bg-secondary pt-4 rounded-lg overflow-hidden shadow-2xl">
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${Images.data[selectedImageIndex].attributes.url}`}
                 alt={Images.data[selectedImageIndex].attributes.name || `Gallery image ${selectedImageIndex + 1}`}
                 className="w-full h-auto max-h-[80vh] object-cover"

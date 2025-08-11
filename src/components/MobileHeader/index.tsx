@@ -38,7 +38,7 @@ export default function MobileHeader({ headerData }: { headerData: any }) {
           &larr;
         </span>
         <a href="/flukes/" className="mx-auto mt-30 block w-fit">
-          <img src={`${process.env.NEXT_PUBLIC_BASE_URL}${logo}`} alt="Logoo" width={200} height={60} />
+          <Image src={`${process.env.NEXT_PUBLIC_BASE_URL}${logo}`} alt="Logoo" width={200} height={60} />
         </a>
 
         <ul className="w-full flex flex-col items-center justify-center py-18 font-['Salford_Sans'] text-[45px]">

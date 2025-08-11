@@ -3,6 +3,6 @@
   "/book-now/page": "/book-now",
   "/confirmation/page": "/confirmation",
   "/dmn-redirect/page": "/dmn-redirect",
-  "/[slug]/page": "/[slug]",
-  "/page": "/"
+  "/page": "/",
+  "/[slug]/page": "/[slug]"
 }

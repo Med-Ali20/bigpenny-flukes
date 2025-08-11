@@ -74,7 +74,7 @@ const Parched: React.FC<any> = ({ data }) => {
               className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 text-secondary font-semibold"
             ></div>
             <div className="relative">
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_1.data.attributes.url}`}
                 width={450}
                 height={450}
@@ -106,7 +106,7 @@ const Parched: React.FC<any> = ({ data }) => {
           </h3>
           <div className="flex flex-col lg:flex-row items-center justify-around w-full mt-12 lg:max-w-[1200px] lg:mx-auto">
             <div className="relative">
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_2.data.attributes.url}`}
                 width={450}
                 height={450}
@@ -145,7 +145,7 @@ const Parched: React.FC<any> = ({ data }) => {
             className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center mb-12 md:mb-0 w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary font-semibold"
           ></div>
           <div className="relative">
-            <img
+            <Image
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image_3.data.attributes.url}`}
               width={450}
               height={450}
