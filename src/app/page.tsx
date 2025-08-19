@@ -11,15 +11,16 @@ import HeroImage from "@/sections/hero-image";
 
 export default async function Home() {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/flukes?populate[nittyGritty][populate][card][populate]=*&populate[testimonial][populate]=*&populate[findUs][populate]=*&populate[openingHours][populate]=*&populate[parched][populate][image_1]=*&populate[parched][populate][image_2]=*&populate[parched][populate][image_3]=*&populate[gameForce][populate]=*&populate[getLucky][populate][logo]=*&populate[getLucky][populate][image]=*&populate[HeroImage][populate]=*&populate[games_hall][populate][image]=*`
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/flukes?populate[nittyGritty][populate][card][populate]=*&populate[testimonial][populate]=*&populate[findUs][populate]=*&populate[openingHours][populate]=*&populate[parched][populate][image_1]=*&populate[parched][populate][image_2]=*&populate[parched][populate][image_3]=*&populate[gameForce][populate]=*&populate[getLucky][populate][logo]=*&populate[getLucky][populate][image]=*&populate[HeroMedia][populate]=*&populate[games_hall][populate][image]=*`
   );
   const data = await res.json();
+  
 
   return (
     <main>
       {/* <GetLucky data={data.data.attributes.getLucky} /> */}
       {/* <FreeCocktail /> */}
-      <HeroImage data={data.data.attributes.HeroImage} />
+      <HeroImage data={data.data.attributes.HeroMedia} />
       <UpNext data={data.data.attributes.games_hall} />
       <NittyGritty data={data.data.attributes.nittyGritty} />
       {/* <Testimonial data={data.data.attributes.testimonial}/> */}

@@ -1,6 +1,30 @@
 {
   "version": 4,
   "routes": {
+    "/book-now": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/book-now",
+      "dataRoute": "/book-now.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/confirmation": {
       "experimentalBypassFor": [
         {
@@ -73,30 +97,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/book-now": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/book-now",
-      "dataRoute": "/book-now.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/test": {
       "experimentalBypassFor": [
         {
@@ -151,8 +151,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "f36ca825eec6c74ab707c8f437d277e5",
-    "previewModeSigningKey": "9d3000ff9eaa357016dce397f0b49704f39747f5d8f2d75f73c209fcabac1247",
-    "previewModeEncryptionKey": "552512bd21e93fc422d4fdce81af254722c2c17e32223ff65ce5d9626fcbf7ef"
+    "previewModeId": "2ed55bc9f692d67bb86b43b4a5065224",
+    "previewModeSigningKey": "9e9ddd180715ed58ce95dc161f06e118c4da0b44074baf8d4c3c629c98169224",
+    "previewModeEncryptionKey": "dc4937febee40f962496d7d60898122863cf49fa6e7de69b5970d3d544e23b03"
   }
 }

@@ -5,6 +5,7 @@ import React, { Fragment } from "react";
 import { decode } from "he";
 import Image from "next/image";
 import BookNowElliptic from "@/components/book-now-elliptic";
+import BookNowRectangular from "@/components/book-now-rectaungular";
 
 const Parched: React.FC<any> = ({ data }) => {
   console.log(data.image_1.data.attributes.url);
@@ -59,10 +60,10 @@ const Parched: React.FC<any> = ({ data }) => {
       {/* First Section */}
       <div className="px-8 font-['Salford_Sans'] w-full">
         <div className="px-8">
-          <h3 className="font-black font-[var(--font-salford-sans)] text-center text-[45px] lg:text-[90px] uppercase lg:leading-[65px] leading-[32px] my-[35px]">
+          <h3 className="font-black text-left mx-auto w-fit font-[var(--font-salford-sans)] text-center text-[45px] lg:text-[90px] uppercase lg:leading-[65px] leading-[32px] my-[45px]">
             {data.parchedTitle === "parched? peckish?" ? (
               <Fragment>
-                parched? <br /> <span className="-ml-12">peckish?</span>
+                parched? <br /> peckish?
               </Fragment>
             ) : (
               data.parchedTitle
@@ -71,7 +72,7 @@ const Parched: React.FC<any> = ({ data }) => {
           <div className="flex flex-col-reverse lg:flex-row items-center justify-around w-full mt-12 lg:max-w-[1200px] lg:mx-auto">
             <div
               dangerouslySetInnerHTML={{ __html: data.parchedDescription }}
-              className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 text-secondary font-semibold"
+              className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 text-secondary"
             ></div>
             <div className="relative">
               <Image
@@ -118,31 +119,33 @@ const Parched: React.FC<any> = ({ data }) => {
               <span className="absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-full bottom-[-5px] right-[-5px] md:bottom-[-30px] md:right-[-30px]"></span>
               <span className="absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-full bottom-[-5px] left-[-5px] md:bottom-[-30px] md:left-[-30px]"></span>
             </div>
-            <div className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary font-semibold flex flex-col gap-10">
+            <div className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary flex flex-col gap-10">
               <div
                 dangerouslySetInnerHTML={{ __html: data.bigpennyDescription }}
               ></div>
-              <BookNowElliptic className="my-7" orangeBackground />
+              <BookNowRectangular 
+                          className={`bg-secondary text-primary text-[2rem] mt-8 mb-4 w-fit mx-auto h-auto leading-0 py-[2rem] px-[2rem]`}
+
+              />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Third Section */}
-      <div className="px-8 font-['Salford_Sans'] w-full">
+      {/* <div className="px-8 font-['Salford_Sans'] w-full">
         <h3 className="font-black font-[var(--font-salford-sans)] text-[45px] text-center lg:text-[90px] text-center uppercase lg:leading-[65px] leading-[32px] my-[35px]">
           {data.about === "parched? peckish?" ? (
             <Fragment>
-              parched? <br /> <span className="-ml-12">peckish?</span>
+              About us
             </Fragment>
           ) : (
             data.about
           )}
         </h3>
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-around w-full mt-12">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-around w-full">
           <div
             dangerouslySetInnerHTML={{ __html: data.aboutDescription }}
-            className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center mb-12 md:mb-0 w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary font-semibold"
+            className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center mb-12 md:mb-0 w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary"
           ></div>
           <div className="relative">
             <Image
@@ -158,7 +161,7 @@ const Parched: React.FC<any> = ({ data }) => {
             <span className="absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-full bottom-[-5px] left-[-5px] md:bottom-[-30px] md:left-[-30px]"></span>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -5,7 +5,7 @@ import React, { Fragment } from "react";
 const OpeningHours: React.FC<any> = ({ data }) => {
   return (
     <>
-      <section className="bg-primary -mt-12">
+      <section className="bg-primary -mt-12 py-15 md:py-4">
         {/* Pseudo-element to cover the bottom half */}
         {/* <div className="absolute inset-x-0 bottom-0 h-1/2 bg-[#FBFBF8] content-[''] z-10"></div> */}
         <Image
@@ -30,7 +30,7 @@ const OpeningHours: React.FC<any> = ({ data }) => {
               "brightness(0) saturate(100%) invert(95%) sepia(8%) saturate(433%) hue-rotate(18deg) brightness(98%) contrast(93%)",
           }}
         />
-        <div className="relative font-['Salford_Sans'] bg-primary text-secondary text-[40px] leading-[1] flex flex-col pb-15 lg:pt-10 lg:pb-42  text-center min-[1400px]:flex-row justify-center items-center bg-no-repeat bg-[length:1000px] lg:bg-cover">
+        <div className="relative font-['Salford_Sans'] bg-primary text-secondary text-[40px] leading-[1] flex flex-col pb-5 lg:pt-10 lg:pb-18  text-center min-[1400px]:flex-row justify-center items-center bg-no-repeat bg-[length:1000px] lg:bg-cover">
           <h1 className="uppercase font-black text-[70px] leading-[51px] min-[1400px]:text-[120px] min-[1400px]:leading-[80px] z-50 min-[1400px]:mr-8 min-[1400px]:ml-auto mt-0 mt-[10px]">
             Opening <br /> Hours
           </h1>
@@ -83,6 +83,28 @@ const OpeningHours: React.FC<any> = ({ data }) => {
           </p> */}
           </div>
         </div>
+        <Image
+          src="/flukes/illustrations/separator.svg"
+          alt="Flukes"
+          width={341}
+          height={22}
+          className="mx-auto lg:mt-[15px] mb-[35px] md:hidden"
+          style={{
+            filter:
+              "brightness(0) saturate(100%) invert(95%) sepia(8%) saturate(433%) hue-rotate(18deg) brightness(98%) contrast(93%)",
+          }}
+        />
+        <Image
+          src="/flukes/illustrations/separator-desktop.svg"
+          alt="Flukes"
+          width={1518}
+          height={43.57}
+          className="mx-auto pb-18 hidden md:block"
+          style={{
+            filter:
+              "brightness(0) saturate(100%) invert(95%) sepia(8%) saturate(433%) hue-rotate(18deg) brightness(98%) contrast(93%)",
+          }}
+        />
       </section>
     </>
   );

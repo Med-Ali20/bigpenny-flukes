@@ -25,7 +25,7 @@ async function Components(Component: any) {
           key={uuidv4()}
           title={Component.Title}
           content={Component.Content}
-          cta={{ text: Component.CTA.Text, url: Component.CTA.Url }}
+          cta={{ text: Component.CTA?.Text, url: Component.CTA?.Url }}
           image={Component.Image}
           mobileImage={Component.MobileImage}
         />

@@ -29,7 +29,7 @@ const UpNext: React.FC<any> = ({ data }) => {
         className="mx-auto mb-[3rem] hidden md:block"
       />
       <div className="flex uppercase mx-auto items-center justify-around text-center lg:w-[80%] w-[90%]">
-        <div className="text-[1.4rem] lg:text-[2rem] font-bold leading-[1.4rem] mt-2 lg:mt-0 lg:leading-[1.8rem] font-['Roc_Grotesk']">
+        <div className="text-[1.4rem] lg:text-[2rem] leading-[1.4rem] mt-2 lg:mt-0 lg:leading-[1.8rem] font-['Roc_Grotesk']">
           <p>darts</p>
           <p>shuffle</p>
           <p>karaoke</p>
@@ -38,7 +38,7 @@ const UpNext: React.FC<any> = ({ data }) => {
         <h2 className="text-[4rem] lg:text-[6.4rem] font-bold leading-[3.2rem] lg:leading-[4.5rem] text-center">
           your new old <br /> games hall
         </h2>
-        <div className="text-[1.4rem] lg:text-[2rem] font-bold leading-[1.4rem] mt-2 lg:mt-0 lg:leading-[1.8rem] font-['Roc_Grotesk']">
+        <div className="text-[1.4rem] lg:text-[2rem] leading-[1.4rem] mt-2 lg:mt-0 lg:leading-[1.8rem] font-['Roc_Grotesk']">
           <p>cocktails</p>
           <p>beers</p>
           <p>bites</p>
@@ -80,6 +80,7 @@ const UpNext: React.FC<any> = ({ data }) => {
           src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image.data.attributes.url}`}
           className="w-full mx-auto"
           alt=""
+          fill
         />
         <span
           className={`absolute bg-primary w-[30px] h-[30px] md:w-[40px] md:h-[40px] rounded-[50%] top-[-15px] left-[0px]`}

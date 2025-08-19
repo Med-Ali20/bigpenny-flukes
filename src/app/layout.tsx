@@ -92,8 +92,8 @@ export default async function RootLayout({
             <Image
               src={`${process.env.NEXT_PUBLIC_BASE_URL}${header.logo.data.attributes.url}`}
               alt="Logo"
-              // width={320}
-              // height={62}
+              width={320}
+              height={62}
               className="lg:w-[22rem] 2xl:-[30rem]"
             />
           </a>

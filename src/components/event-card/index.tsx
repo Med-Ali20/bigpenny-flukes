@@ -81,9 +81,10 @@ const EventCard: React.FC<Props> = ({
         >
           <div className="flex items-center justify-center w-[295.72px] h-[223.95px] mx-auto relative z-1 min-[1400px]:w-[322px] min-[1400px]:h-[259px]">
             <Image
-              src={image}
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}${image}`}
               alt="Event Image"
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
+              fill
             />
 
             {/* Logo overlay */}
@@ -104,22 +105,22 @@ const EventCard: React.FC<Props> = ({
           <h3 className="mt-8 text-left font-black text-[40px] leading-[35px] mb-2 uppercase">
             {title}
           </h3>
-          <p className="text-left text-[25px] min-[1400px]:text-[30px] leading-[25px] min-[1400px]:leading-[30px]">
+          <p className="text-left text-[18px] min-[1400px]:text-[19px] leading-[16px] min-[1400px]:leading-[20px] font-['Roc_Grotesk']">
             {description}
           </p>
-          <p className="text-left text-[25px] min-[1400px]:text-[30px] leading-[25px] min-[1400px]:leading-[30px] mt-auto min-[1400px]:text-xl">
+          <p className="text-left text-[25px] min-[1400px]:text-[30px] leading-[25px] min-[1400px]:leading-[30px] mt-auto min-[1400px]:text-xl font-['Salford_Sans']">
             <span className="font-black text-left uppercase mr-2">
               players:{" "}
             </span>{" "}
-            <span>{players}</span>
+            <span className="font-['Roc_Grotesk'] text-[18px] min-[1400px]:text-[18px] leading-[18px] min-[1400px]:leading-[16px]">{players}</span>
           </p>
           <p className="text-left text-[25px] min-[1400px]:text-[30px] leading-[25px] min-[1400px]:leading-[30px] min-[1400px]:text-xl">
             <span className="font-black text-left uppercase mr-2">price: </span>{" "}
-            <span>{price}</span>
+            <span className="font-['Roc_Grotesk'] text-[18px] min-[1400px]:text-[18px] leading-[18px] min-[1400px]:leading-[16px]">{price}</span>
           </p>
           <p className="text-left text-[25px] min-[1400px]:text-[30px] leading-[25px] min-[1400px]:leading-[30px] min-[1400px]:text-xl mb-3">
             <span className="font-black text-left uppercase mr-2">space: </span>{" "}
-            <span>{space}</span>
+            <span className="font-['Roc_Grotesk'] text-[18px] min-[1400px]:text-[18px] leading-[18px] min-[1400px]:leading-[16px]">{space}</span>
           </p>
         </div>
         <div
@@ -128,7 +129,7 @@ const EventCard: React.FC<Props> = ({
           <h3 className="text-left font-black text-[40px] lg:text-[40px] uppercase">
             {backsideTitle}
           </h3>
-          <p className="text-left text-left text-[25px] min-[1400px]:text-[30px] leading-[25px] min-[1400px]:leading-[30px]">
+          <p className="text-left font-['Roc_Grotesk'] text-left text-[18px] min-[1400px]:text-[19px] leading-[22px] min-[1400px]:leading-[26px]">
             {backsideDescription}
           </p>
           <BookNowRectangular

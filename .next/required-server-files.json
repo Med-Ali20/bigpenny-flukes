@@ -64,7 +64,7 @@
           "hostname": "134.209.17.172"
         }
       ],
-      "unoptimized": true
+      "unoptimized": false
     },
     "devIndicators": {
       "position": "bottom-left"
@@ -101,7 +101,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/ahmedali/Desktop/Projects/bigpenny/flukes",
+    "outputFileTracingRoot": "/Users/ahmedali/Desktop/Projects/bigpenny/flukes copy",
     "experimental": {
       "allowedDevOrigins": [],
       "nodeMiddleware": false,
@@ -180,7 +180,7 @@
       "forceSwcTransforms": false,
       "largePageDataBytes": 128000,
       "turbo": {
-        "root": "/Users/ahmedali/Desktop/Projects/bigpenny/flukes"
+        "root": "/Users/ahmedali/Desktop/Projects/bigpenny/flukes copy"
       },
       "typedRoutes": false,
       "typedEnv": false,
@@ -292,7 +292,7 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts"
   },
-  "appDir": "/Users/ahmedali/Desktop/Projects/bigpenny/flukes",
+  "appDir": "/Users/ahmedali/Desktop/Projects/bigpenny/flukes copy",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

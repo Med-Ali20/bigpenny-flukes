@@ -50,7 +50,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
         <EventCard
           className="bg-secondary min-[1000px]:-mr-6 min-[1400px]:-mr-5 lg:-mt-18 lg:ml-auto"
           rotation={2.17}
-          image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[0].image.data.attributes.url}`}
+          image={`${data.card[0].image.data.attributes.url}`}
           title={data.card[0].title}
           description={data.card[0].frontsideDescription}
           players={data.card[0].players}
@@ -68,7 +68,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
         <EventCard
           className="bg-secondary lg:-mr-10 lg:-mb-18 lg:ml-0"
           rotation={-1.78}
-          image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[1].image.data.attributes.url}`}
+          image={`${data.card[1].image.data.attributes.url}`}
           title={data.card[1].title}
           description={data.card[1].frontsideDescription}
           players={data.card[1].players}
@@ -85,7 +85,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
         <EventCard
           className="bg-secondary lg:-mt-24 lg:-ml-2 lg:mr-0"
           rotation={1.29}
-          image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[2].image.data.attributes.url}`}
+          image={`${data.card[2].image.data.attributes.url}`}
           title={data.card[2].title}
           description={data.card[2].frontsideDescription}
           players={data.card[2].players}
@@ -102,7 +102,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
         <EventCard
           className="bg-secondary min-[1000px]:-ml-5 min-[1400px]:-ml-5 lg:-mb-18 lg:mr-auto"
           rotation={-1.53}
-          image={`${process.env.NEXT_PUBLIC_BASE_URL}${data.card[3].image.data.attributes.url}`}
+          image={`${data.card[3].image.data.attributes.url}`}
           title={data.card[3].title}
           description={data.card[3].frontsideDescription}
           players={data.card[3].players}

@@ -41,13 +41,13 @@ const GetLucky:React.FC<any> = ({ data }) => {
           </h1>
           <div className="relative w-[317px] h-[150px] lg:w-[300px] lg:h-[140px] xl:w-[400px] xl:h-[190px] mx-auto xl:mt-[18px] lg:mt-[30px] 2xl:hidden">
             <Image
-              src={`${data.logo.data.attributes.url}`}
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.logo.data.attributes.url}`}
               alt="Flukes"
               className=""
             />
           </div>
           <Image
-            src={`${data.logo.data.attributes.url}`}
+            src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.logo.data.attributes.url}`}
             alt="Flukes"
             width={556}
             height={263.09}
@@ -80,7 +80,7 @@ const GetLucky:React.FC<any> = ({ data }) => {
                     lg:w-[400px] lg:h-[345px] xl:w-[490px] xl:h-[420px]"
           >
             <Image
-              src={`${data.image.data.attributes.url}`}
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image.data.attributes.url}`}
               alt="Flukes"
               // fill
               className="mx-auto my-auto"
@@ -94,7 +94,7 @@ const GetLucky:React.FC<any> = ({ data }) => {
 
         <div className="hidden 2xl:block bg-primary w-[713px] h-[800px] flex items-center justify-center relative ml-[75px]">
           <Image
-            src={`${data.image.data.attributes.url}`}
+            src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image.data.attributes.url}`}
             alt="Flukes"
             width={637}
             height={550}

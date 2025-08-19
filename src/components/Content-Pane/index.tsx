@@ -12,9 +12,9 @@ const ContentPaneComponent: React.FC<ContentPane> = ({
   mobileImage,
   cta,
 }) => {
-  const imageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}${image?.data?.attributes?.url}`;
+  const imageUrl = `${image?.data?.attributes?.url}`;
   const imageName = image?.data?.attributes?.name || "Content image";
-  const mobileImageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}${mobileImage?.data?.attributes?.url}`;
+  const mobileImageUrl = `${mobileImage?.data?.attributes?.url}`;
   const mobileImageName =
     mobileImage?.data?.attributes?.name || "Content image mobile";
 

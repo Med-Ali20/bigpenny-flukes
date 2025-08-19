@@ -20,7 +20,7 @@ const Testimonial: React.FC<any> = ({ data }) => {
       />
       <section className='font-["Salford_Sans"] flex flex-col items-center pt-[65px] px-4 lg:py-24'>
         <Image
-          src={`${data.image.data.attributes.url}`}
+          src={`${process.env.NEXT_PUBLIC_BASE_URL}${data.image.data.attributes.url}`}
           alt="cake"
           width={302}
           height={296}
