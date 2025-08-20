@@ -105,7 +105,7 @@ const EventCard: React.FC<Props> = ({
           <h3 className="mt-8 text-left font-black text-[40px] leading-[35px] mb-2 uppercase">
             {title}
           </h3>
-          <p className="text-left text-[18px] min-[1400px]:text-[19px] leading-[16px] min-[1400px]:leading-[20px] font-['Roc_Grotesk']">
+          <p className="text-left text-[18px] min-[1400px]:text-[18px] leading-[16px] min-[1400px]:leading-[20px] font-['Roc_Grotesk']">
             {description}
           </p>
           <p className="text-left text-[25px] min-[1400px]:text-[30px] leading-[25px] min-[1400px]:leading-[30px] mt-auto min-[1400px]:text-xl font-['Salford_Sans']">
