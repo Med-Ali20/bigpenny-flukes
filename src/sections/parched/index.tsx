@@ -119,7 +119,7 @@ const Parched: React.FC<any> = ({ data }) => {
               <span className="absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-full bottom-[-5px] right-[-5px] md:bottom-[-30px] md:right-[-30px]"></span>
               <span className="absolute bg-primary w-[15px] md:w-[50px] h-[15px] md:h-[50px] rounded-full bottom-[-5px] left-[-5px] md:bottom-[-30px] md:left-[-30px]"></span>
             </div>
-            <div className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary flex flex-col gap-10">
+            <div className="font-['Roc_Grotesk'] text-[18px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 lg:w-[30%] text-secondary flex flex-col gap-10">
               <div
                 dangerouslySetInnerHTML={{ __html: data.bigpennyDescription }}
               ></div>
