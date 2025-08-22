@@ -72,7 +72,7 @@ const Parched: React.FC<any> = ({ data }) => {
           <div className="flex flex-col-reverse lg:flex-row items-center justify-around w-full mt-12 lg:max-w-[1200px] lg:mx-auto">
             <div
               dangerouslySetInnerHTML={{ __html: data.parchedDescription }}
-              className="font-['Roc_Grotesk'] text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 text-secondary"
+              className="font-['Roc_Grotesk'] text-[18px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] lg:max-w-[428px] text-center w-[80%] mt-8 lg:mt-0 text-secondary mb-8"
             ></div>
             <div className="relative">
               <Image

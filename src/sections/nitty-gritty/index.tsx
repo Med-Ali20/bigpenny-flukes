@@ -43,7 +43,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
       <h1 className="text-[40px] font-black leading-[5rem] lg:leading-[2rem] uppercase lg:text-[70px] 2xl:text-[80px]">
         {data.title}
       </h1>
-      <p className="mt-[2rem] md:mt-[1rem] lg:mt-[40px] mb-[75px] md:mb-[100px] lg:mb-[172px] 2xl:mb-[200px] mx-auto text-[16px] leading-[22px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px] max-w-[75%] font-['Roc_Grotesk']">
+      <p className="mt-[2rem] md:mt-[1rem] lg:mt-[40px] mb-[75px] md:mb-[100px] lg:mb-[172px] 2xl:mb-[200px] mx-auto text-[18px] leading-[20px]  min-[1400px]:text-[22px] min-[1400px]:leading-[27px] max-w-[75%] font-['Roc_Grotesk']">
         {data.description}
       </p>
       <div className="w-full lg:flex lg:justify-center items-center relative">
@@ -95,7 +95,7 @@ const NittyGritty: React.FC<any> = ({ data }) => {
           backsideDescription={data.card[2].backsideDescription}
           backsideClassName="relative z-90"
           widthDesktop={220}
-          heightDesktop={134}
+          heightDesktop={197}
           widthMobile={200.15}
           heightMobile={90.21}
         />

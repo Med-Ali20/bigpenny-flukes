@@ -71,7 +71,7 @@ const EventCard: React.FC<Props> = ({
         </span>
       )}
       <div
-        className={`relative w-[327.72px] h-[486.81px] will-change-transform  transition-transform duration-500 [transform-style:preserve-3d] [transform-style: preserve-3d] group-hover:[transform:rotateY(180deg)] min-[1400px]:w-[365.28px] min-[1400px]:h-[566.31px] ${
+        className={`relative w-[327.72px] h-[486.81px] will-change-transform  transition-transform duration-500 [transform-style:preserve-3d] [transform-style: preserve-3d] group-hover:[transform:rotateY(180deg)] min-[1400px]:w-[365.28px] min-[1400px]:h-[586.31px] ${
           isFlipped ? "[transform:rotateY(179.99deg)]" : ""
         }`}
         style={{ willChange: "transform" }}
@@ -105,22 +105,22 @@ const EventCard: React.FC<Props> = ({
           <h3 className="mt-8 text-left font-black text-[40px] leading-[35px] mb-2 uppercase">
             {title}
           </h3>
-          <p className="text-left text-[18px] min-[1400px]:text-[18px] leading-[16px] min-[1400px]:leading-[20px] font-['Roc_Grotesk']">
+          <p className="text-left text-[18px]  min-[1400px]:text-[22px] min-[1400px]:leading-[27px] leading-[20px] font-['Roc_Grotesk']">
             {description}
           </p>
           <p className="text-left text-[25px] min-[1400px]:text-[30px] leading-[25px] min-[1400px]:leading-[30px] mt-auto min-[1400px]:text-xl font-['Salford_Sans']">
             <span className="font-black text-left uppercase mr-2">
               players:{" "}
             </span>{" "}
-            <span className="font-['Roc_Grotesk'] text-[18px] min-[1400px]:text-[18px] leading-[18px] min-[1400px]:leading-[16px]">{players}</span>
+            <span className="font-['Roc_Grotesk'] text-[18px] leading-[18px] min-[1400px]:leading-[16px]">{players}</span>
           </p>
           <p className="text-left text-[25px] min-[1400px]:text-[30px] leading-[25px] min-[1400px]:leading-[30px] min-[1400px]:text-xl">
             <span className="font-black text-left uppercase mr-2">price: </span>{" "}
-            <span className="font-['Roc_Grotesk'] text-[18px] min-[1400px]:text-[18px] leading-[18px] min-[1400px]:leading-[16px]">{price}</span>
+            <span className="font-['Roc_Grotesk'] text-[18px] leading-[18px] min-[1400px]:leading-[16px]">{price}</span>
           </p>
           <p className="text-left text-[25px] min-[1400px]:text-[30px] leading-[25px] min-[1400px]:leading-[30px] min-[1400px]:text-xl mb-3">
             <span className="font-black text-left uppercase mr-2">space: </span>{" "}
-            <span className="font-['Roc_Grotesk'] text-[18px] min-[1400px]:text-[18px] leading-[18px] min-[1400px]:leading-[16px]">{space}</span>
+            <span className="font-['Roc_Grotesk'] text-[18px] leading-[18px] min-[1400px]:leading-[16px]">{space}</span>
           </p>
         </div>
         <div
@@ -129,7 +129,7 @@ const EventCard: React.FC<Props> = ({
           <h3 className="text-left font-black text-[40px] lg:text-[40px] uppercase">
             {backsideTitle}
           </h3>
-          <p className="text-left font-['Roc_Grotesk'] text-left text-[18px] min-[1400px]:text-[19px] leading-[22px] min-[1400px]:leading-[26px]">
+          <p className="text-left font-['Roc_Grotesk'] text-left text-[18px] leading-[20px] min-[1400px]:text-[22px] min-[1400px]:leading-[27px]">
             {backsideDescription}
           </p>
           <BookNowRectangular
