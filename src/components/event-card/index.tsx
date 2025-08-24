@@ -81,7 +81,7 @@ const EventCard: React.FC<Props> = ({
         >
           <div className="flex items-center justify-center w-[295.72px] h-[223.95px] mx-auto relative z-1 min-[1400px]:w-[322px] min-[1400px]:h-[259px]">
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_URL}${image}`}
+              src={`${image}`}
               alt="Event Image"
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
               fill

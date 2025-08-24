@@ -5,8 +5,8 @@ import Image from "next/image";
 
 
 const HeroImageComponent: React.FC<HeroImage> = ({ Image: image, MobileImage }) => {
-  const imageUrl = `${image.data?.attributes.url}`;
-  const mobileImageUrl = `${MobileImage.data?.attributes.url}`;
+  const imageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}${image.data?.attributes.url}`;
+  const mobileImageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}${MobileImage.data?.attributes.url}`;
 
   return (
     <div className="w-full mb-5">
