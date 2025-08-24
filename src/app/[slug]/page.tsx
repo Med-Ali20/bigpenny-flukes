@@ -38,6 +38,7 @@ export async function generateMetadata({
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/flukes-pages?filters[slug][$eq]=${slugWithSlash}&populate=deep`
   );
   const data = await res.json();
+  console.log(data.data[0].attributes)
   
   // Handle case where page is not found
   if (!data.data || data.data.length === 0) {
@@ -79,7 +80,7 @@ const Page: React.FC<PageProps> = async ({ params }) => {
 
   const components = data.data[0]?.attributes?.Components || [];
 
-  return <div className="mb-12">{components?.map(Components)}</div>;
+  return <div className="-mb-12">{components?.map(Components)}</div>;
 };
 
 export default Page;

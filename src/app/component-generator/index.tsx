@@ -5,7 +5,11 @@ import FaqTabs from "@/components/FAQ";
 import Gallery from "@/components/Gallery";
 import HeroImage from "@/components/Hero-Image";
 import TextBlock from "@/components/Text-Block";
+import ZigZagTextImage from '@/components/ZigZagTextImage'
 import { v4 as uuidv4 } from "uuid";
+import NittyGritty from "@/components/nitty-gritty";
+import OpeningHours from "@/components/OpeningHours";
+import GamesHall from '@/components/GamesHall'
 
 async function Components(Component: any) {
   switch (Component.__component) {
@@ -61,6 +65,38 @@ async function Components(Component: any) {
           key={uuidv4()}
           Content={Component.Content}
           Title={Component.Title}
+        />
+      );
+
+    case "ui.zig-zag-text-image":
+      return (
+        <ZigZagTextImage
+          key={uuidv4()}
+          Content={Component}
+        />
+      );
+
+    case "ui.nitty-gritty":
+      return (
+        <NittyGritty
+          key={uuidv4()}
+          Content={Component}
+        />
+      );
+
+    case "ui.opening-hours":
+      return (
+        <OpeningHours
+          key={uuidv4()}
+          Content={Component}
+        />
+      );
+
+    case "section.games-hall":
+      return (
+        <GamesHall
+          key={uuidv4()}
+          Content={Component}
         />
       );
 
